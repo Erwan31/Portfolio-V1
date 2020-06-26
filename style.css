@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #1D3C34; /* pantone 560 C */
+    color: white;
+    font-family: 'Comfortaa', cursive;
+}
+
+nav h1{
+    font-weight: 700;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a:hover{
+    color: green;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+.active{
+    background: blueviolet;
+}
+
+@media screen and (max-width: 700px) {
+    .nav-links{
+        font-size: 10px;
+    }
+}
