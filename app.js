@@ -1,11 +1,14 @@
 const nav = document.querySelector(".nav-links");
-const navLinks = document.querySelector(".nav-links li");
+const navLinks = document.querySelectorAll(".nav-links li");
 
-navLinks.classList.toggle = 
-navLinks.forEach( link => {
-    link.classList.toggle("actdhsj");
-    console.log("click");
-    link.addEventListener('click', () => {
-        link.classList.toggle(".active");
+function navLink () {
+    navLinks.forEach( link => {
+        link.classList.toggle("actdhsj");
+        console.log("click");
+        link.addEventListener('click', () => {
+            link.classList.toggle(".active");
+        });
     });
-})
+}
+
+navLink();
