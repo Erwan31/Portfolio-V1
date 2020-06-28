@@ -18,23 +18,23 @@ nav h1{
     font-weight: 700;
 }
 
-.nav-links{
+.nav-item{
     display: flex;
     justify-content: space-around;
     width: 45%;
 }
 
-.nav-links a{
+.nav-item a{
     color: white;
     text-decoration: none;
     letter-spacing: 3px;
 }
 
-.nav-links li{
+.nav-item li{
     list-style: none;
 }
 
-.nav-links a:hover{
+.nav-item a:hover{
     color: green;
     text-decoration: none;
     letter-spacing: 3px;
@@ -69,7 +69,7 @@ nav h1{
 }
 
 @media screen and (max-width: 700px) {
-    .nav-links{
+    .nav-item{
         font-size: 10px;
     }
 }
