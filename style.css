@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -43,16 +47,9 @@ nav h1{
     transition: top 0.5s;
 }
 
-
-
-.nav-item a{
-    color: white;
-    text-decoration: none;
-    letter-spacing: 3px;
-}
-
 .nav-item li{
     list-style: none;
+    width: 100%;
     height: 100%;
     margin: auto;
     padding: 30px;
@@ -64,8 +61,13 @@ nav h1{
     letter-spacing: 3px;
 }
 
-.active{
-    background: blueviolet;
+.nav-item li a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
 }
 
 .about{

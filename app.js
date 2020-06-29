@@ -11,7 +11,7 @@ function navLink () {
     });
 }
 
-navLink();
+//navLink();
 
 
 /* Scroll detection for sticky navbar */
