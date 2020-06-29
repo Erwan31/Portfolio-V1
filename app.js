@@ -52,12 +52,11 @@ function scrollStickyOrHidden() {
     if (scrollH > lastScrollTop){
        // downscroll code
        nav.classList.remove("navbar-fixed-top");
-       nav.style.paddingTop = 0;
+       nav.style.top = -nav.offsetHeight + 'px';
     } else {
        // upscroll code
        nav.classList.add("navbar-fixed-top");
-       nav.style.paddingTop = 10 + 'px';
-       console.log('innerH: ', nav.offsetHeight);
+       nav.style.top = 0 + 'px';
     }
     lastScrollTop = scrollH <= 0 ? 0 : scrollH; // For Mobile or negative scrolling
 }
