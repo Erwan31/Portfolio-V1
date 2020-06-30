@@ -52,13 +52,13 @@ function scrollStickyOrHidden() {
     console.log(scrollH);
 
     // Origin padding
-    if( scrollH < 50){
+    if( scrollH < 25){
         nav.style.marginTop = '10px';
-        nav.style.boxShadow = "5px 5px 5px #003C34";
+        nav.style.boxShadow = "0px 0px 0px #003C34";
     }
     else{
         nav.style.marginTop = '0px';
-        nav.style.boxShadow = "0px 0px 0px #003C34";
+        nav.style.boxShadow = "5px 5px 5px #003C34";
     }
 
     // Navbar fixed on top until 100px, then hidden
@@ -66,12 +66,10 @@ function scrollStickyOrHidden() {
        // downscroll code
        nav.classList.remove("navbar-fixed-top");
        nav.style.top = -nav.offsetHeight + 'px';
-       nav.style.boxShadow = "0px 0px 0px #003C34";
     } else {
        // upscroll code
        nav.classList.add("navbar-fixed-top");
        nav.style.top = 0 + 'px';
-       nav.style.boxShadow = "5px 5px 5px #003C34";
     }
     lastScrollTop = scrollH <= 0 ? 0 : scrollH; // For Mobile or negative scrolling
 }
