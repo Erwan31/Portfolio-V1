@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/intro.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/about.css">
     <title>Erwan Spilmont | Frontend Developer</title>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -15,7 +17,7 @@
         <h1><a class="me">Erwan Spilmont</a></h1>
         <ul class="nav-item">
             <li><a class="nav-link" href="#about">About</a></li>
-            <li><a class="nav-link" href="#experiences">Experiences</a></li>
+            <li><a class="nav-link" href="#experiences">Experience</a></li>
             <li><a class="nav-link" href="#projects">Projects</a></li>
             <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
@@ -23,36 +25,45 @@
 
     <main>
         <section class="intro">
-            <h2>Intro</h2>
             <h4>Hi, my name is</h4>
-            <h1>Erwan Spilmont</h1>
-            <div>I am an aspiring Web Developer.</div>
-            <p>I am an electronic/embedded software engineer formerly based in Porto
+            <h1 class="introname">Erwan Spilmont</h1>
+            <div class="introtext"> 
+               <p class="introp1">I am an aspiring Web Developer.</p>
+                <p class="introp2">I am also an electronic/embedded software engineer formerly based in Porto
             and desiring to design amazing websites, applications and so on.</p>
+            </div>
         </section>
 
+        <hr style="width:25%;text-align:left;margin-left:0;color:#006F62;">
+        
         <section id="about" class="about">
             <h2>About</h2>
-            <div>
+            <div class="aboutp1">
                 Hey there, I am Erwan, engineer and currently learning the technology of the web from France.
             </div>
+            <img src="./images/me.png" class="img-fluid" alt="erwan spilmont">
             <p>
                 I had the chance to develop basic web interface while working in a research lab in Portugal and got a taste to it!
             </p>
+            <p>I am currently learning some of the many technologies used for web developement by doing many tutorials and creating website for me and my friends.</p>
         </section>
 
+        <hr style="width:25%;text-align:left;margin-left:0;color:#006F62;">
+ 
         <section id="experiences" class="experiences">
-            <h2>Experiences</h2>
+            <h2>Experience</h2>
         </section>
 
+        <hr style="width:25%;text-align:left;margin-left:0;color:#006F62;">
+ 
         <section id="projects" class="projects">
             <h2>Projects</h2>
         </section>
     </main>
 
-    <footer>Contact</footer>
+    <footer id="contact" class="contact">Contact</footer>
 
     <script src=""></script>
-    <script src="app.js"></script>
+    <script src="navbar.js"></script>
 </body>
 </html>

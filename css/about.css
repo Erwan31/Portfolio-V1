@@ -1,0 +1,15 @@
+.img-fluid{
+    max-width: 20%;
+    height: auto;
+    border-radius: 25%;
+    border-width: 2px;
+    border-style: solid;
+    border-color:#006F62;
+    float: right;
+}
+
+.aboutp1{
+    float: left;
+    width: 75%;
+    margin-left: 0;
+}
