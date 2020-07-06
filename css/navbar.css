@@ -25,6 +25,7 @@ nav{
 nav h1{
     position: absolute;
     left: 10px;
+    bottom: 10px;
 }
 
 .me{
@@ -40,13 +41,6 @@ nav h1{
 
 main{
     padding: 0% 10%;
-}
-.intro{
-    margin-top: 100px;
-}
-
-.intro h4{
-    color:#006F62;
 }
 
 .nav-item{
