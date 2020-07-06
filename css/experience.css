@@ -1,0 +1,61 @@
+.experience{
+    height: 1837px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.job-edu-timeline{
+    height: 900px;
+}
+
+.skills{
+    height: 911px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.dev-skills{
+    height: 700px;
+    width: 405px;
+}
+
+.skills-title{
+    height: 132px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.developer{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #EEEEEE;
+}
+
+.developer-bold{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #6BBBAE;
+}
+
+.dev-and-tools{
+    height: 565px;
+    background: #00594C;
+    border-radius: 30px;
+}
