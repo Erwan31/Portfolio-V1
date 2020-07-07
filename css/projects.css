@@ -1,0 +1,72 @@
+
+.project-container{
+    width: 100%;
+    height: 492px;
+
+    display: flex;
+    align-items: center;
+    justify-items: center;   
+
+    justify-content: center;
+}
+
+.project-thumbnail{
+    width: 576px;
+    height: 320px;
+
+    background-image: url(../images/figma-navbar.PNG);
+    background-blend-mode: overlay;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    margin-top: 86px;
+    margin-bottom: 86px;
+    margin-left: 115px;
+    margin-right: -70px;
+}
+
+.project-presentation{
+    width: 443px;
+    height: 239px;
+    
+    background: #EEEEEE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+    padding: 30px;
+}
+
+.project-name{
+    width: 183px;
+    height: 36px;
+
+    font-family: Anonymous Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+
+    color: #6BBBAE;
+
+    background-color: transparent;
+}
+
+.project-text{
+    width: 364px;
+    height: 160px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+    background-color: transparent;
+
+    text-align:justify;
+    margin: 0;
+}
