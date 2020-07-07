@@ -1,0 +1,45 @@
+.contact{
+    height: 125px;
+    background: #006F62;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-container,
+.contact-link,
+.contact-img,
+.contact-designer{
+    background: transparent;
+}
+
+
+.contact-container{
+    width: 386px;
+    height: 95px;
+
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+    justify-content: space-between;
+}
+
+.contact-designer{
+    width: 386px;
+    height: 30px;
+
+    font-style: italic;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 15px;
+
+    text-align: center;
+
+    color: #EEEEEE;
+
+    margin: 10px 0px;
+}
+
