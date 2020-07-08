@@ -62,7 +62,7 @@ function scrollStickyOrHidden() {
     }
 
     // Navbar fixed on top until 100px, then hidden
-    if (scrollH > lastScrollTop && scrollH > 150){
+    if (scrollH > lastScrollTop && scrollH > 110){
        // downscroll code
        nav.classList.remove("navbar-fixed-top");
        nav.style.top = -nav.offsetHeight + 'px';
