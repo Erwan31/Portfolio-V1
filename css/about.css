@@ -114,3 +114,16 @@
 
     background: url(me_rect.jpg);
 }
+  
+
+.portrait-pic[data-scroll] {
+    transition: opacity 1s;
+}
+
+.portrait-pic[data-scroll="in"] {
+    opacity: 1;
+}
+
+.portrait-pic[data-scroll="out"] {
+    opacity: 0;
+}
