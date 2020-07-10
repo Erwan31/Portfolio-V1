@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./css/experience.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/projects.css">
+    <link rel="stylesheet" href="./css/getmycv.css">
     
     <title>Erwan Spilmont | Frontend Developer</title>
 </head>
@@ -45,7 +46,7 @@
                         as a Developer.</p>
                 </div>
             </div>
-        <!--<img class="intro-img" src="./images/float.jpg" alt="#">-->    
+          <!--<img class="intro-img" src="./images/snow.gif" alt="#">-->    
         </section>
         
         <section id="about" class="about"> <!--aussi présent id="about"-->
@@ -59,7 +60,7 @@
                 <p> Hey there, I am <span class="about-bold-colorized">Erwan</span>, engineer and currently learning web technologies to become a Frontend Developer.</p>
                 <p>I had the chance to develop basic web interfaces communicating with BLE devices while working in a research lab in Portugal...
                     and I got a taste for it!</p>
-                    <p> I am currently learning some of the technologies used for web development, by doing tutorials and creating website for me and my friends.</p>
+                <p> I am currently learning some of the technologies used for web development, by doing tutorials and creating website for me and my friends.</p>
                 </div>
                 <div class="portrait-container">
                     <img id="mvt2" class="portrait-ellipse"  src="./images/Ellipse-portrait.svg" alt="#">
@@ -277,6 +278,10 @@
                 </div>
             </div>
         </section>
+
+        <section class="getmycv">
+
+        </section>
     </main>
 
     <footer id="contact" class="contact">
@@ -295,63 +300,80 @@
 
         // create a scene
         var sceneIntro = new ScrollMagic.Scene({
-            duration: 150, // the scene should last for a scroll distance of 100px
-            offset: 100 // start this scene after scrolling for 50px
+            duration: 250, // the scene should last for a scroll distance of 100px
+        //    offset: 100 // start this scene after scrolling for 50px
         })
             .setPin('#intro-container') // pins the element for the the scene's duration
             .addTo(controller); // assign the scene to the controller
 
         var sceneAbout = new ScrollMagic.Scene({
 							triggerElement: ".portrait-container",
-							/*triggerHook: 0.9,*/
+							triggerHook: 0.8,
 							offset: 50, // move trigger to center of element
-							reverse: false // only do once
+							/*reverse: false // only do once*/
 						})
 						.setClassToggle("#reveal2", "visible") // add class toggle
-						.addIndicators() // add indicators (requires plugin)
 						.addTo(controller);
 
-/*
-        var sceneNavbar = new ScrollMagic.Scene({
-                            triggerElement: "#sec1"
-                        })
-                        .setClassToggle("#high1", "active") // add class toggle
-			            .addIndicators() // add indicators (requires plugin)
-					    .addTo(controller);*/
-
         var translateSquare = new ScrollMagic.Scene({
-                         triggerElement: ".portrait-container"
+                            triggerElement: ".portrait-container",
+                            triggerHook: 0.8,
+                            offset: 50, // move trigger to center of element
                         })
-                        .setClassToggle("#mov0") // add class toggle
-			            .addIndicators() // add indicators (requires plugin)
+                        .setClassToggle("#mvt0", "visible") // add class toggle
 					    .addTo(controller);
+
+        var translateTriangle = new ScrollMagic.Scene({
+                            triggerElement: ".portrait-container",
+                            triggerHook: 0.8,
+                            offset: 50, // move trigger to center of element
+                        })
+                        .setClassToggle("#mvt1", "visible") // add class toggle
+					    .addTo(controller);
+
+        var translateCircle = new ScrollMagic.Scene({
+                            triggerElement: ".portrait-container",
+                            triggerHook: 0.8,
+                            offset: 50, // move trigger to center of element
+                        })
+                        .setClassToggle("#mvt2", "visible") // add class toggle
+					    .addTo(controller);
+
+        const heightAbout = document.getElementById("about").offsetHeight;
+        const heightExp = document.getElementById("experience").offsetHeight;
+        const heightProjects = document.getElementById("projects").offsetHeight;
+        const heightContact = document.getElementById("contact").offsetHeight;
 
         var navAbout = new ScrollMagic.Scene({
-                         triggerElement: "#about"
+                         triggerElement: "#about",
+                         duration: heightAbout, // hide 10% before exiting view (80% + 10% from bottom)
                         })
                         .setClassToggle("#aboutLink", "activeNavLink") // add class toggle
-			            .addIndicators() // add indicators (requires plugin)
 					    .addTo(controller);
 
+        
         var navExperience = new ScrollMagic.Scene({
-                         triggerElement: "#experience"
+                         triggerElement: "#experience",
+                         duration: heightExp, // hide 10% before exiting view (80% + 10% from bottom)
                         })
                         .setClassToggle("#experienceLink", "activeNavLink") // add class toggle
-			            .addIndicators() // add indicators (requires plugin)
 					    .addTo(controller);
+
 
         var navProjects = new ScrollMagic.Scene({
-                         triggerElement: "#projects"
+                         triggerElement: "#projects",
+                         duration: heightProjects-2*heightContact, // hide 10% before exiting view (80% + 10% from bottom)
                         })
                         .setClassToggle("#projectsLink", "activeNavLink") // add class toggle
-			            .addIndicators() // add indicators (requires plugin)
 					    .addTo(controller);
 
+        
         var navContact = new ScrollMagic.Scene({
-                         triggerElement: "#contact"
+                         triggerElement: "#contact",
+                        /* duration: heightContact,*/
+                         triggerHook: 100,
                         })
                         .setClassToggle("#contactLink", "activeNavLink") // add class toggle
-			            .addIndicators() // add indicators (requires plugin)
 					    .addTo(controller);
     </script>
 </body>
