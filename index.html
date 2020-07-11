@@ -71,7 +71,7 @@
                 
             </div>
         </section>
- 
+ <!--
         <section id="experience" class="experience">
             <h2 class="section-title">Experience</h2>
             <div class="job-edu-container">
@@ -85,7 +85,7 @@
                                 <li><a href="#student1" data-toggle="tab">ENSEA</a></li>
                               </ul>
                         </div>    
-                          
+                      
                       <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_vertical_tabs-->
                               <!-- Tab panes -->
                               <div class="tab-content">
@@ -99,52 +99,37 @@
                                 <div class="tab-pane" id="student0">Messages Tab.</div>
                                 <div class="tab-pane" id="student1">Settings Tab.</div>
                               </div>
-                       
-                          
-                          
-<!--
-                    <div class="col-xs-3"> 
-                        <ul class="nav nav-tabs tabs-left" id="navtab-links" role="tablist">
-                            <li class="nav-item"><a class="nav-link" data-toggle="tab"
-                                 href="#researcher" role="tab" aria-controls="researcher" aria-selected="false">
-                            Researcher <span class="location"> @ INESC-TEC</span>
-                            </a></li>
-                            <li class="nav-item"><a class="nav-link" data-toggle="tab"
-                                href="#intern" role="tab" aria-controls="intern" aria-selected="false">
-                            Intern <span class="location"> @ INESC-TEC</span>
-                            </a></li>
-                            <li class="nav-item"><a class="nav-link" data-toggle="tab"
-                                href="#student1" role="tab" aria-controls="student1" aria-selected="false">
-                            Student <span class="location"> @ FEUP</span>
-                            </a></li>
-                            <li class="nav-item"><a class="nav-link" data-toggle="tab"
-                                href="#student0" role="tab" aria-controls="student0" aria-selected="false">
-                             Student <span class="location"> @ ENSEA</span>
-                            </a></li>
-                        </ul>
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="researcher" role="tabpanel" aria-labelledby="researcher-tab">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae eu nulla 
-                                eleifend vestibulum placerat egestas. Nascetur lacus lacus turpis massa 
-                                aliquet mauris consequat. Ornare diam venenatis morbi netus vulputate 
-                                ullamcorper praesent et dictum. Pretium justo, non at feugiat.
-                            </div>
-                            <div class="tab-pane fade" id="intern" role="tabpanel" aria-labelledby="intern-tab">
-                                rat egestas. Nascetur lacus lacus turpis massa aliquet mauris consequat.
-                                 Ornare diam venenatis morbi netus 
-                            </div>
-                            <div class="tab-pane fade" id="student0" role="tabpanel" aria-labelledby="student0-tab">
-                                Lorem ipsum dolor sit amet, con
-                            </div>
-                            <div class="tab-pane fade" id="student1" role="tabpanel" aria-labelledby="student1-tab">
-                                Lorem ipsum dolor sit amet, con
-                            </div>
-                        </div>
-                    </div> 
-                -->
                     </div>
                 </div>
             </div>
+        -->
+
+            <section id="experience" class="experience">
+                <h2 class="section-title">Experience</h2>
+                <div class="job-edu-container">
+                    <div class="job-edu">
+                        <div class="job-edu-title"><div>Jobs & Education</div></div>
+                        <div class="navtab-container">
+                            <div class="col-xs-6 col-md-4">
+                                  <ul class="tab">
+                                    <li class="tablinks" onclick="openLocation(event, 'researcher')" id="defaultOpen"><a href="#researcher">INESC-TEC</a></li>
+                                    <li class="tablinks" onclick="openLocation(event, 'student0')"><a href="#student0">FEUP</a></li>
+                                    <li class="tablinks" onclick="openLocation(event, 'student1')"><a href="#student1">ENSEA</a></li>
+                                  </ul>
+                            </div>    
+
+                                  <!-- Tab panes -->
+                                    <div id="researcher" class="tabcontent">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae eu nulla 
+                                        eleifend vestibulum placerat egestas. Nascetur lacus lacus turpis massa 
+                                        aliquet mauris consequat. Ornare diam venenatis morbi netus vulputate 
+                                        ullamcorper praesent et dictum. Pretium justo, non at feugiat.
+                                    </div>
+                                    <div id="student0" class="tabcontent">Messages Tab.</div>
+                                    <div id="student1" class="tabcontent">Settings Tab.</div>
+                        </div>
+                    </div>
+                </div>
 
             <div class="skills">
                 <div class="dev-skills">
@@ -294,6 +279,7 @@
     </footer>
 
     <script src="navbar.js"></script>
+    <script src="experience.js"></script>
     <script>
         // init controller
        let controller = new ScrollMagic.Controller();
