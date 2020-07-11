@@ -111,3 +111,7 @@ footer{
         font-size: 10px;
     }
 }
+
+.activeNavLink{
+    background: #006F62;
+}

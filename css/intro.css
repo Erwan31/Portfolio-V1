@@ -2,6 +2,9 @@
     height: 570px;
     margin-top: 195px;
     margin-bottom: 50px;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 .intro-title{
@@ -70,9 +73,9 @@
 
 
 .intro-img{
-
     width: 300px;
     height: 300px;
 
-    opacity: 30%;
+    opacity: 50%;
 }
+
