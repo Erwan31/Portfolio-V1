@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/projects.css">
     <link rel="stylesheet" href="./css/getmycv.css">
+
+    <script src="experience.js"></script>
     
     <title>Erwan Spilmont | Frontend Developer</title>
 </head>
@@ -85,9 +87,7 @@
                                 <li><a href="#student1" data-toggle="tab">ENSEA</a></li>
                               </ul>
                         </div>    
-                      
-                      <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_vertical_tabs-->
-                              <!-- Tab panes -->
+                    
                               <div class="tab-content">
                                 <div class="tab-pane active" id="researcher">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae eu nulla 
@@ -103,7 +103,6 @@
                 </div>
             </div>
         -->
-
             <section id="experience" class="experience">
                 <h2 class="section-title">Experience</h2>
                 <div class="job-edu-container">
@@ -111,11 +110,11 @@
                         <div class="job-edu-title"><div>Jobs & Education</div></div>
                         <div class="navtab-container">
                             <div class="col-xs-6 col-md-4">
-                                  <ul class="tab">
-                                    <li class="tablinks" onclick="openLocation(event, 'researcher')" id="defaultOpen"><a href="#researcher">INESC-TEC</a></li>
-                                    <li class="tablinks" onclick="openLocation(event, 'student0')"><a href="#student0">FEUP</a></li>
-                                    <li class="tablinks" onclick="openLocation(event, 'student1')"><a href="#student1">ENSEA</a></li>
-                                  </ul>
+                                  <div class="tab">
+                                    <button class="tablinks" onclick="openLocation(event, 'researcher')" id="defaultOpen">INESC-TEC</button>
+                                    <button class="tablinks" onclick="openLocation(event, 'student0')">FEUP</button>
+                                    <button class="tablinks" onclick="openLocation(event, 'student1')">ENSEA</button>
+                                  </div>
                             </div>    
 
                                   <!-- Tab panes -->
@@ -279,7 +278,6 @@
     </footer>
 
     <script src="navbar.js"></script>
-    <script src="experience.js"></script>
     <script>
         // init controller
        let controller = new ScrollMagic.Controller();
@@ -360,7 +358,12 @@
                          triggerHook: 100,
                         })
                         .setClassToggle("#contactLink", "activeNavLink") // add class toggle
-					    .addTo(controller);
+                        .addTo(controller);
+                        
+
+    // Get the element with id="defaultOpen" and click on it -> to activate default tab
+    // Working in coop with experience.js
+    document.getElementById("defaultOpen").click();
     </script>
 </body>
 </html>
