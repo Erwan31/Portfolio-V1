@@ -343,10 +343,10 @@
 }
 
 .description,
-.description ul,
-.description ul li{
+.description li{
     background-color: inherit;
     text-align: justify;
+    padding: 3px;
 }
 
 .description{
