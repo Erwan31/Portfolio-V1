@@ -231,18 +231,23 @@
     background-color: transparent;
 }
 
+.tablinks{
+    height: var(--navtab-h);
+}
+
 /* Style the tab */
 .tab {
     float: left;
     border: none;
     background-color: transparent;
     width: 290px;
-  }
+    height: 100%;
+}
   
-  /* Style the buttons inside the tab */
-  .tab button {
+/* Style the buttons inside the tab */
+.tab button {
     width: 290px;
-    height: 60px;
+    height: 100px;
 
     display: block;
     background-color: transparent;
@@ -255,11 +260,13 @@
   
   /* Change background color of buttons on hover */
   .tab button:hover {
-    background-color: #006F62;
+    background-color: #6BBBAE;
   }
   
   /* Create an active/current "tab button" class */
-  .tab button .active { 
+  .tab button.active{ 
+    width: 100%;
+    height: 100%;
     background-color: #006F62;
   }
   
@@ -276,10 +283,31 @@
   }
 
   .tabcontent-header{
+    height: 47px;
+    margin: 10px;
+
     background-color: transparent;
 
     display: flex;
     align-items: center;
     justify-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
   }
+
+  .period,
+  .location,
+  .location img{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+
+    background-color: transparent;
+  }
+
+.description,
+.description p,
+.description p ul,
+.description-list-elt{
+      background-color: transparent;
+}
