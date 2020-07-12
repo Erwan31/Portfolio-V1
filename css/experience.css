@@ -188,6 +188,8 @@
     display: flex;
     align-items: center;
     text-align: center;
+
+    justify-content: center;
 }
 
 .job-edu{
@@ -253,14 +255,17 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 20px;
+
+    border-radius: 0px 40px 40px 0px;
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #6BBBAE;
+.tab button:hover:not(.active){
+    color: #6BBBAE;
+    background-color: transparent;
 }
 
-  /* Create an active/current "tab button" class */
+/* Create an active/current "tab button" class */
 .tab button.active{ 
     background-color: #006F62;
 }

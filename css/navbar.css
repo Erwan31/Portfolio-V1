@@ -62,7 +62,7 @@ main{
     /*padding: 30px;*/
 }
 
-.nav-item li:hover{
+.nav-item li:hover:not(.activeNavLink){
     background-color: #6BBBAE;
     text-decoration: none;
 }
