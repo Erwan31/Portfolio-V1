@@ -337,3 +337,17 @@
     transform: scale(0.7);
 }
 
+.description,
+.description ul,
+.description ul li{
+    background-color: inherit;
+    text-align: justify;
+}
+
+.description{
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
