@@ -342,6 +342,12 @@
             .setPin('#intro-container') // pins the element for the the scene's duration
             .addTo(controller); // assign the scene to the controller
 
+        var sceneIntro1 = new ScrollMagic.Scene({
+            duration: 200, // the scene should last for a scroll distance of 100px
+        })
+            .setPin('.demo a') // pins the element for the the scene's duration
+            .addTo(controller); // assign the scene to the controller
+
         var sceneAbout = new ScrollMagic.Scene({
 							triggerElement: ".portrait-container",
 							triggerHook: 0.8,
@@ -416,6 +422,7 @@
     // Get the element with id="defaultOpen" and click on it -> to activate default tab
     // Working in coop with experience.js
     document.getElementById("defaultOpen").click();
+
     </script>
 </body>
 </html>

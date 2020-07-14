@@ -12,7 +12,9 @@ function navLink () {
 }
 
 //navLink();
+const scrollMarker = document.querySelector(".demo a");
 
+console.log('scrollmarker', scrollMarker);
 
 /* Scroll detection for sticky navbar */
 const windowH = window.innerHeight;
@@ -20,6 +22,11 @@ const windowH = window.innerHeight;
 window.onscroll = function (){
     //scrollStickiness();
     scrollStickyOrHidden();
+    
+    if( window.pageYOffset > 200){
+        scrollMarker.style.display = 'none';
+    }
+    else scrollMarker.style.display = 'inline-block';
 }
 
 const nav = document.querySelector("nav");
@@ -27,6 +34,9 @@ const body = document.querySelector("body");
 let stickyOffset = nav.offsetTop;
 let scrollTop = document.documentElement.scrollTop;
 let lastScrollTop = (nav.offsetHeight*2) + 'px';
+
+
+
 
 function scrollStickiness() {
     if(window.pageYOffset >= stickyOffset){

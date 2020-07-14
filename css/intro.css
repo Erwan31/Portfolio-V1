@@ -23,7 +23,7 @@
 
 .introname{
     margin: 0;
-    width: 633px;
+    width: 630px;
     height: 80px;
     font-style: normal;
     font-weight: bold;
@@ -118,7 +118,8 @@
     color: #6BBBAE;
     text-decoration: none;
     transition: opacity .3s;
-  }
+}
+
   .demo a:hover {
     opacity: .5;
   }
@@ -189,4 +190,46 @@
     100% {
         opacity: 1;
     }
+}
+
+@media screen and (max-width: 750px){
+    #demo{
+        right: 5%;
+        bottom: 0%;
+        width: 50px;
+    }
+
+    .intro{
+        margin-top: 95px;
+        margin-bottom: 0px;
+        height: 100%;
+    }
+
+    .intro-title{
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .introname{
+        width: 100%;
+        font-size: 55px;
+        line-height: 55px;
+        text-align: left;
+    }
+
+    .introp1{
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .introp2{
+        font-size: 15px;
+        line-height: 15px;
+        height: 30%;
+        padding-right: 100px;
+    }
+
+    
+    
+    
 }
