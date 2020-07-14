@@ -31,7 +31,7 @@ main{
 
 .nav-item{
     height: 75px;
-    min-width: 45%;
+    min-width: 40%;
     position: absolute;
     right: 0px;
     display: flex;
@@ -73,7 +73,8 @@ main{
     color: white;
     text-decoration: none;
     letter-spacing: 3px;
-  /*  padding: 50% 25%; */
+    padding: 1em;
+    font-size: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,16 +107,22 @@ footer{
     width: 100%;
 }
 
+.activeNavLink{
+    background: #006F62;
+}
+
 @media screen and (max-width: 700px) {
     .nav-item{
         font-size: 10px;
     }
 }
 
-.activeNavLink{
-    background: #006F62;
-}
 
+@media screen and (max-width: 450px) {
+    .nav-item{
+        font-size: 10px;
+    }
+}
 
 /* Style the buttons inside the tab */
 .tab button {

@@ -17,7 +17,8 @@
 
 
 .contact-container{
-    width: 386px;
+    max-width: 400px;
+    width: 40%;
     height: 95px;
 
     display: flex;
@@ -28,7 +29,8 @@
 }
 
 .contact-designer{
-    width: 386px;
+    max-width: 400px;
+   /* width: 40%;*/
     height: 30px;
 
     font-style: italic;
@@ -44,13 +46,13 @@
 }
 
 .contact-link{
-
-
     border-radius: 50%;
 
     box-shadow: inset 0px 0px 0px #1D3C34,
                 0px 0px 0px #1D3C34;
     transition: 0.3s;
+
+    margin: 0em 0.5em;
 
 }
 
@@ -59,4 +61,47 @@
     box-shadow: inset -1px -1px 2px #1D3C34,
     2px 2px 5px #1D3C34;
 }
+
+
+@media screen and (max-width: 450px) {
+
+    .contact{
+        height: 65px;
+    }
+
+    .contact-container{
+        width: 90%;
+        height: 40px;
+        margin: 0em 10%;
+    }
+
+    .contact-link{
+        transform: scale(0.7);
+    }
+
+    .contact-link:hover{
+        transform: translateY(0px) scale(0.7);
+        box-shadow: inset -1px -1px 2px #1D3C34,
+        2px 2px 5px #1D3C34;
+    }
+
+    .contact-designer{
+        width: 90%;
+       /* width: 40%;*/
+        height: 15px;
+    
+        font-style: italic;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 10px;
+    
+        text-align: center;
+    
+        color: #EEEEEE;
+    
+        margin: 5px 0px;
+    }
+}
+
+
 

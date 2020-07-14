@@ -139,6 +139,7 @@
     border-bottom: 1px solid #6BBBAE;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
+    animation-delay: 2s;
     -webkit-animation: sdb05 3s infinite;
     animation: sdb05 3s infinite;
     box-sizing: border-box;
