@@ -255,3 +255,104 @@
 /*    animation-delay: 3s;
     animation: float2 30s ease infinite; */
 }
+
+
+@media screen and (max-width: 450px){
+
+    .about{
+        height: 120vh;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .about-bold{
+        margin: 0;
+    
+        width: 90vw;
+        height: 20vh;
+        font-size: 20px;
+        line-height: 20px;
+    }
+    
+    .about-portrait{
+        flex-direction: column-reverse;
+        justify-items: left;
+        align-items: left;
+        justify-content: left;
+    }
+    
+    .aboutp1{
+        margin-top: 70px;
+        margin-left: 100px;
+        width: 510px;
+        height: 320px;
+    
+        font-family: Anonymous Pro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 20px;
+    
+        color: #EEEEEE;
+    
+    }
+    
+    .portrait-container{
+        /* Portrait     transform: scale(0.4);*/
+        position: relative;
+        top: 10px;
+        left: 0px;
+        transform: scale(0.4);
+    }
+    
+    .portrait-polygon{
+        /* Polygon-portrait */
+        position: absolute;
+        width: 97.5px;
+        height: 96.88px;
+        left: 408px;
+        top: 51px;
+    
+        border-radius: 5px;
+    }
+    
+    .portrait-rect{
+        /* Rectangle-portrait */
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        left: 122px;
+        top: 12px;
+    
+        background: #6BBBAE;
+        border-radius: 5px;
+    }
+    
+    .portrait-ellipse{
+        /* Ellipse-portrait */
+        position: absolute;
+        width: 130px;
+        height: 130px;
+        left: 334px;
+        top: 203px;
+    
+        /*background: #EEEEEE;*/
+    }
+    
+    
+    .portrait-pic{
+        /* Ellipse-portrait-pic */
+        position: absolute;
+        width: 260px;
+        height: 260px;
+        left: 192px;
+        top: 39px;
+    
+        /*background: url(me_rect.jpg);*/
+        background-color: transparent;
+    }
+
+
+}
