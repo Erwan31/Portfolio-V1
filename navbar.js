@@ -36,8 +36,6 @@ let scrollTop = document.documentElement.scrollTop;
 let lastScrollTop = (nav.offsetHeight*2) + 'px';
 
 
-
-
 function scrollStickiness() {
     if(window.pageYOffset >= stickyOffset){
         nav.classList.add("sticky");
@@ -62,7 +60,7 @@ function scrollStickyOrHidden() {
     console.log(scrollH);
 
     // Origin padding
-    if( scrollH < 25){
+    if( scrollH < 25 && window.innerWidth > 750){   //take into account responsiveness
         nav.style.marginTop = '10px';
         nav.style.boxShadow = "0px 0px 0px #003C34";
     }

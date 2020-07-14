@@ -1,5 +1,5 @@
 .intro{
-    height: 570px;
+    height: 90vh;
     margin-top: 195px;
     margin-bottom: 50px;
 
@@ -71,13 +71,6 @@
     color: #6BBBAE;
 }
 
-
-.intro-img{
-    width: 300px;
-    height: 300px;
-
-    opacity: 50%;
-}
 /*
 #scrollToAbout{
     position: absolute;
@@ -106,6 +99,11 @@
     box-sizing: border-box;
 }
 */
+
+.demo{
+    width: 90px;
+    height: 534px;
+}
 
 .demo a {
     position: absolute;
@@ -195,14 +193,13 @@
 @media screen and (max-width: 750px){
     #demo{
         right: 5%;
-        bottom: 0%;
+        bottom: 10%;
         width: 50px;
     }
 
     .intro{
         margin-top: 95px;
         margin-bottom: 0px;
-        height: 100%;
     }
 
     .intro-title{
