@@ -190,25 +190,20 @@
     }
 }
 
-@media screen and (max-width: 750px){
-    #demo{
-        right: 5%;
-        bottom: 10%;
-        width: 50px;
-    }
+@media screen and (max-width: 550px){
 
     .intro{
-        margin-top: 95px;
-        margin-bottom: 0px;
+        margin-top: 40px;
+        margin-bottom: 0;
     }
 
-    .intro-title{
+    .intro-title{ 
         font-size: 15px;
         line-height: 15px;
     }
 
     .introname{
-        width: 100%;
+        width: 95vw;
         font-size: 55px;
         line-height: 55px;
         text-align: left;
@@ -217,16 +212,48 @@
     .introp1{
         font-size: 20px;
         line-height: 20px;
+        width: 90vw;
+        margin: 10px 0px;
+        text-align: left;
     }
 
     .introp2{
         font-size: 15px;
         line-height: 15px;
-        height: 30%;
-        padding-right: 100px;
+        height: 10vh;
+        width: 70vw;
+    }
+    
+}
+
+@media screen and (max-width: 750px){
+
+    #section05{
+       top: 500px; 
     }
 
-    
-    
+    .intro{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .intro-title{ 
+        width: 50vw;
+    }
+
+    .introname{
+        width: 95vw;
+        text-align: left;
+    }
+
+    .introp1{
+        width: 90vw;
+        text-align: left;
+    }
+
+    .introp2{
+        height: 10vh;
+        width: 70vw;
+    }
     
 }
