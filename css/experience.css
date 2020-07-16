@@ -1,6 +1,5 @@
 .experience{
-    height: 200vh;
-    min-height: 1400px;
+    height: 1400px;
     margin-top: 25px;
     margin-bottom: 25px;
     padding-top: 25px;
@@ -369,6 +368,7 @@
     .experience{
         height: 300vh;
         min-height: 2000px;
+        max-height: 2500px;
     }
 
     .job-edu-container{
@@ -434,8 +434,8 @@
 
     .skills{
         /* Experience -> Skills */
-        height: 200vh;
         min-height: 1300px;
+        max-height: 1400px;
         flex-direction: column;
     }
 
