@@ -12,12 +12,15 @@
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .dev-skills{
     height: 700px;
-    width: 405px;
+    max-width: 405px;
+    min-width: 275px;
+    width: 25vw;
+    margin: 2vw;
 }
 
 .skills-title{
@@ -53,7 +56,7 @@
 }
 
 .dev-and-tools{
-    height: 565px;
+    height: 450px;
     background: #00594C;
     border-radius: 30px;
     justify-content: center;
@@ -69,13 +72,14 @@
 
 
 .dev-container{
-    width: 405px;
+    max-width: 405px;
+    width: 100%;
     height: 375px;
 }
 
 .dev-tools-title{
     width: 100%;
-    height: 85px;
+    height: 70px;
 
     font-style: normal;
     font-weight: bold;
@@ -94,37 +98,38 @@
 
 .skills-line1{
     width: 100%;
-    height: 105px;
+    max-width: 400px;
+    height: 65px;
     
     display: flex;
     justify-content: space-evenly;
 
-    padding: 10px;
     background: transparent;
 
-    margin-top: 10px;
+    margin: 10px 0px;
+    margin-bottom: 15px;
 
 }
 
 .skills-line2{
     width: 100%;
-    height: 100px;
+    max-width: 400px;
+    height: 60px;
     
     display: flex;
     justify-content: space-evenly;
 
-    padding: 10px;
+    margin: 10px 0px;
     background: transparent;
 
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
 }
 
 .skills-item{
-    width: 108px;
     height: 64px;
     background: transparent;
-    margin: 5px;
+    margin: 0;
 
     display: flex;
     align-items: center;
@@ -136,7 +141,6 @@
 .skills-item img{
     background: transparent;
     justify-content: center;
-
 }
 
 .learning{
@@ -155,7 +159,7 @@
 }
 
 .tools-container{
-    width: 405px;
+    width: 100%;
     height: 160px;
 }
 
@@ -166,7 +170,7 @@
     display: flex;
     align-items: center;
     justify-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .line{
