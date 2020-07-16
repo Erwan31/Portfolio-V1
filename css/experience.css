@@ -8,11 +8,13 @@
 
 /* Experience -> Skills */
 .skills{
-    height: 910px;
+    height: 710px;
+    max-width: 1024px;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: space-between;
+    margin: auto;
 }
 
 .dev-skills{
@@ -446,4 +448,8 @@
     }
 }
 
-
+@media screen and (max-width: 450px){
+    .dev-container{
+        transform: scale(0.9);
+    }
+}
