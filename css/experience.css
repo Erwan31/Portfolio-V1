@@ -372,16 +372,13 @@
     }
 
     .job-edu-container{
-
         height: 100vh;
-    
-
     }
     
     .job-edu{
         width: 100%;
         max-width: 900px;
-        height: 100vh;
+        height: 70vh;
         min-height: 660px; 
     
         background: #00594C;

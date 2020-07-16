@@ -6,7 +6,7 @@
 
 .project-container{
     width: 100%;
-    height: 492px;
+    height: 25%;
 
     display: flex;
     align-items: center;
@@ -21,6 +21,7 @@
 
 .project-thumbnail-left{
     width: 40vw;
+    max-width: 600px;
     height: 320px;
 
     background-image: url(../images/figma-navbar.PNG);
@@ -81,7 +82,8 @@
 }
 
 .project-thumbnail-right{
-    width: 576px;
+    width: 40vw;
+    max-width: 600px;
     height: 320px;
 
     background-image: url(../images/figma-navbar.PNG);
@@ -90,13 +92,12 @@
 
     margin-top: 86px;
     margin-bottom: 86px;
-    margin-right: 115px;
-    margin-left: -70px;
-
+    margin-right: 0;
+    margin-left: -5vw;
 }
 
 .project-presentation-right{
-    width: 443px;
+    width: 445px;
     height: 239px;
     
     background: #EEEEEE;
@@ -105,7 +106,7 @@
 
     padding: 30px;
 
-    z-index: 1;
+    z-index: 2;
 }
 
 @media screen and (max-width: 850px){
@@ -117,6 +118,16 @@
     }
 
     .project-presentation-left{
+        z-index: 2;
+    }
+
+    .project-thumbnail-right{
+        transform: scale(0.8);
+        margin-left: -6vw;
+        z-index: 0;
+    }
+
+    .project-presentation-right{
         z-index: 2;
     }
 
@@ -142,7 +153,47 @@
     */
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 725px){
+    .project-presentation-left{
+        background-image: url(../images/figma-navbar.PNG);
+        background-blend-mode: overlay;
+        color: white;
+    }
 
+    .project-thumbnail-left{
+        display: none;
+    }
 
+    .project-presentation-right{
+        background-image: url(../images/figma-navbar.PNG);
+        background-blend-mode: overlay;
+        color: white;
+    }
+
+    .project-thumbnail-right{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px){
+
+    .projects{
+        width: 100%;
+        height: 2000px;
+    }
+
+    .project-container{
+        height: 33%;
+    }
+
+    .project-presentation-left,
+    .project-presentation-right{
+        width: 90%;
+        height: 70%;
+    }
+
+    .project-text{
+        width: 90%;
+        height: 90%; 
+    }
 }

@@ -257,7 +257,7 @@
     animation: float2 30s ease infinite; */
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1025px){
 
     .about-bold{
         margin: 0;
