@@ -68,6 +68,7 @@
     position: relative;
     width: 700px;
     height: 423px;
+    background-color: transparent;
 }
 
 .portrait-polygon{
@@ -356,4 +357,54 @@
     }
 
 
+}
+
+
+@media screen and (max-width: 1000px){
+
+    .about-bold{
+        margin: 0;
+        margin-top: 3vh;
+    
+        width: 100%;
+    }
+    
+    .portrait-container{
+        transform: scale(0.8);
+        margin-left: -50px;
+    }
+
+    .aboutp1{
+        margin-left: 0;
+        font-size: 17px;
+        line-height: 17px;
+    }
+}
+
+@media screen and (max-width: 750px){
+ 
+    .about{
+        height: 100vh;
+    }
+
+    .about-portrait{
+        margin-top: 15px;
+        flex-direction: column-reverse;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+        min-height: 550px;
+    }
+
+    .portrait-container{
+        transform: scale(0.7);
+        margin-left: -50px;
+    }
+
+    .about-bold{
+        font-size: 35px;
+        line-height: 35px;
+        padding-top: 35px;
+    }
 }
