@@ -1,6 +1,7 @@
 .about{
     width: 100%;
-    height: 724px;
+ /*   height: 724px;*/
+    height: auto;
     margin-top: 25px;
     margin-bottom: 50px;
     padding-top: 25px;
@@ -283,10 +284,10 @@
 }
 
 @media screen and (max-width: 750px){
- 
+ /*
     .about{
         height: 100vh;
-    }
+    }*/
 
     .about-portrait{
         margin-top: 15px;
@@ -311,11 +312,11 @@
 }
 
 @media screen and (max-width: 450px){
-
+/*
     .about{
         height: 150vh;
         min-height: 950px;
-    }
+    }*/
 
     .about-bold{
         font-size: 30px;

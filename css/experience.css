@@ -1,5 +1,6 @@
 .experience{
-    height: 1400px;
+   /* height: 1400px;*/
+    height: auto;
     margin-top: 25px;
     margin-bottom: 25px;
     padding-top: 25px;
@@ -187,19 +188,22 @@
 /* Experience -> Jobs & Educaton */
 .job-edu-container{
     width: 100%;
-    height: 560px;
+    max-width: 800px;
+    height: auto;
 
     display: flex;
     align-items: center;
     text-align: center;
 
     justify-content: center;
+    margin: auto;
 }
 
 .job-edu{
     width: 100%;
     max-width: 900px;
-    height: 450px;
+    height: auto;
+    min-height: 500px;
 
     background: #00594C;
     border-radius: 30px;
@@ -229,6 +233,8 @@
 }
 
 .navtab-container{
+    width: auto;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-items: center;
@@ -244,7 +250,7 @@
     float: left;
     border: none;
     background-color: transparent;
-    width: 30vw;
+    width: 100%;
     max-width: 250px;
     height: 100%;
 }
@@ -252,7 +258,8 @@
 /* Style the buttons inside the tab */
 .tab button {
     width: 100%;
-    height: 100px;
+    max-width: 250px;
+    height: 30%;
 
     display: block;
     background-color: transparent;
@@ -263,6 +270,8 @@
     line-height: 20px;
 
     border-radius: 0px 40px 40px 0px;
+
+    margin-right: 7vw;
 }
 
 /* Change background color of buttons on hover */
@@ -367,24 +376,30 @@
 }
 
 @media screen and (max-width: 800px){
-    .experience{
+  /*  .experience{
         height: 300vh;
         min-height: 2000px;
         max-height: 2500px;
-    }
+    }*/
 
     .job-edu-container{
-        height: 100vh;
+        height: auto;
     }
-    
+    /*
     .job-edu{
         width: 100%;
         max-width: 900px;
-        height: 70vh;
+        height: auto;
         min-height: 660px; 
     
         background: #00594C;
         border-radius: 30px;
+    }*/
+
+    .job-edu{
+        height: auto;
+        min-height: 550px;
+        margin: 20px 0px;
     }
     
     .job-edu-title{
@@ -429,6 +444,11 @@
         width: 30vw;
         max-width: 250px;
         height: 100%;
+    }
+
+    .tab button{
+        font-size: 17px;
+        line-height: 17px;
     }
 
     .skills{

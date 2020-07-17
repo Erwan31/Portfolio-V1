@@ -57,3 +57,10 @@ main{
     visibility: visible;
   }
   */
+/*
+  @media screen and (max-width: 1030px){
+      main{
+        margin: 0% 10%;
+      }
+  }
+  */
