@@ -196,14 +196,17 @@
     text-align: center;
 
     justify-content: center;
-    margin: auto;
+    margin: 50px 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .job-edu{
     width: 100%;
     max-width: 900px;
+    min-width: 290px;
     height: auto;
-    min-height: 500px;
+    min-height: 450px;
 
     background: #00594C;
     border-radius: 30px;
@@ -235,11 +238,17 @@
 .navtab-container{
     width: auto;
     height: 100%;
+    min-height: max-content;
+    /*
     display: flex;
     align-items: center;
     justify-items: center;
 
     justify-content: space-between;
+    */
+    display: grid;
+    /*grid-template-rows: minmax(25%, 150px) 2fr;*/
+    grid-template-columns: minmax(25%, 150px) 2fr;
 
     background-color: transparent;
 }
@@ -290,9 +299,9 @@
     float: left;
     padding: 0px 12px;
     border: none;
-    width: 70%;
+    width: 95%;
     border-left: none;
-    height: 300px;
+    height: auto;
 
     display: flex;
     flex-direction: row;
@@ -375,101 +384,123 @@
     padding: 10px;
 }
 
+
+
 @media screen and (max-width: 800px){
-  /*  .experience{
-        height: 300vh;
-        min-height: 2000px;
-        max-height: 2500px;
-    }*/
+    /*  .experience{
+          height: 300vh;
+          min-height: 2000px;
+          max-height: 2500px;
+      }*/
+  
+      .job-edu-container{
+          height: auto;
+      }
 
-    .job-edu-container{
-        height: auto;
-    }
-    /*
-    .job-edu{
-        width: 100%;
-        max-width: 900px;
-        height: auto;
-        min-height: 660px; 
-    
-        background: #00594C;
-        border-radius: 30px;
-    }*/
+      .navtab-container{
+        grid-template-columns: minmax(15%, 115px) 2fr;
+      }
 
-    .job-edu{
+      /*
+      .job-edu{
+          width: 100%;
+          max-width: 900px;
+          height: auto;
+          min-height: 660px; 
+      
+          background: #00594C;
+          border-radius: 30px;
+      }*/
+  
+      .job-edu{
+          height: auto;
+          min-height: 550px;
+          margin: 20px 0px;
+      }
+      
+      .job-edu-title{
+          width: 100%;
+          height: 95px;
+      
+          
+          font-style: normal;
+          font-weight: bold;
+          font-size: 30px;
+          line-height: 30px;
+          
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      
+          color: #EEEEEE;
+      
+          background: transparent;
+      }
+      
+      .job-edu-title div{
+          background: transparent;
+      }
+  
+      .tab button{
+          font-size: 17px;
+          line-height: 17px;
+      }
+  
+      .skills{
+          /* Experience -> Skills */
+          min-height: 1300px;
+          max-height: 1400px;
+          flex-direction: column;
+      }
+  
+      .line{
+          transform: rotate(90deg);
+          height: 30vh;
+      }
+  
+      .skills-title{
+          height: 90px;
+      }
+  }
+
+  @media screen and (max-width: 600px){
+      .navtab-container{
         height: auto;
-        min-height: 550px;
-        margin: 20px 0px;
-    }
-    
-    .job-edu-title{
-        width: 100%;
-        height: 95px;
-    
-        
-        font-style: normal;
-        font-weight: bold;
-        font-size: 30px;
-        line-height: 30px;
-        
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-        color: #EEEEEE;
-    
-        background: transparent;
-    }
-    
-    .job-edu-title div{
-        background: transparent;
-    }
-    
-    .navtab-container{
-        display: flex;
-        align-items: center;
-        justify-items: center;
-    
-        justify-content: space-between;
-    
-        background-color: transparent;
-    }
-    
-    
-    /* Style the tab */
+        grid-template-rows: minmax(15%, 70px) 2.2fr;
+        grid-template-columns: none;
+        margin-bottom: 5vh;
+        min-width: 290px;
+      }
+
+      /* Style the tab */
     .tab {
-        float: left;
-        border: none;
-        background-color: transparent;
-        width: 30vw;
-        max-width: 250px;
-        height: 100%;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+
+        justify-content: space-evenly;
+
+        max-width: 100%;
     }
 
     .tab button{
-        font-size: 17px;
-        line-height: 17px;
-    }
+        width: 100%;
+        height: 100%;
+    
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+    
+        border-radius: 20px 20px 20px 20px;
 
-    .skills{
-        /* Experience -> Skills */
-        min-height: 1300px;
-        max-height: 1400px;
-        flex-direction: column;
+        margin: 0;
     }
-
-    .line{
-        transform: rotate(90deg);
-        height: 30vh;
-    }
-
-    .skills-title{
-        height: 90px;
-    }
-}
-
-@media screen and (max-width: 450px){
-    .dev-container{
-        transform: scale(0.9);
-    }
-}
+    
+  }
+  
+  @media screen and (max-width: 450px){
+      .dev-container{
+          transform: scale(0.9);
+      }
+  }
