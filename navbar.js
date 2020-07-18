@@ -1,23 +1,55 @@
 const navItem = document.querySelector(".nav-item");
 const navLinks = document.querySelectorAll(".nav-link");
 let activeLink = undefined;
+/* Scroll detection for sticky navbar */
+const windowH = window.innerHeight;
+const windowW = window.innerWidth;
+
+const scrollMarker = document.querySelector(".demo a");
+
+const burger = document.querySelector('.hamburger');
+const navLinksBurger = document.querySelector('.nav-links');
+const links = document.querySelectorAll('.nav-links li');
+const line = document.querySelector('.line');
+
+
+burger.addEventListener('click', (e) => {
+    navLinksBurger.classList.toggle("open");
+    links.forEach( link => {
+        if( e.target === link){
+            console.log('click on target');
+        }
+      //  link.classList.add("fade");
+    });
+    fadeLinks();
+    line.classList.toggle('active');
+
+    console.log('click');
+});
 
 /* Selection nav link active state */
+
 function navLink () {
-    navLinks.forEach( link => {
+    links.forEach( link => {
         link.addEventListener('click', () => {
-            link.classList.add("active");
+            /*link.classList.add("active");*/
+            console.log('click link');
+            navLinksBurger.classList.remove("open");
+            line.classList.toggle('active');
+            fadeLinks();
         });
     });
 }
 
-//navLink();
-const scrollMarker = document.querySelector(".demo a");
+function fadeLinks() {
+    links.forEach( link => {
+        link.classList.toggle("fade");
+    })
+}
+
+navLink();
 
 console.log('scrollmarker', scrollMarker);
-
-/* Scroll detection for sticky navbar */
-const windowH = window.innerHeight;
 
 window.onscroll = function (){
     //scrollStickiness();
@@ -57,7 +89,7 @@ function scrollStickyOrHidden() {
     }*/
 
     let scrollH = window.pageYOffset;
-    console.log(scrollH);
+    //console.log(scrollH);
 
     // Origin padding
     if( scrollH < 25 && window.innerWidth > 750){   //take into account responsiveness

@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/projects.css">
     <link rel="stylesheet" href="./css/getmycv.css">
+    <link rel="stylesheet" href="./css/burger.css">
 
     <script src="experience.js"></script>
     
@@ -34,6 +35,22 @@
             <li id="projectsLink"><a class="nav-link" href="#projects">Projects</a></li>
             <li id="contactLink"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
+        <div class="burger-menu">
+            <div class="hamburger">
+                <div class="line"></div>
+            </div>
+            <div class="hamburgerel">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li id="aboutLink"><a  class="nav-link" href="#about">About</a></li>
+                <li id="experienceLink"><a class="nav-link" href="#experience">Experience</a></li>
+                <li id="projectsLink"><a class="nav-link" href="#projects">Projects</a></li>
+                <li id="contactLink"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <main>
@@ -345,7 +362,10 @@
         <p class="contact-designer">Designed & Built by Erwan Spilmont - 2020</p>
     </footer>
 
+    <script src="burger.js"></script>
     <script src="navbar.js"></script>
+
+
     <script>
         // init controller
        let controller = new ScrollMagic.Controller();

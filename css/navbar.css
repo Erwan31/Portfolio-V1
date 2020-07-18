@@ -6,6 +6,7 @@ nav{
     width: 100%;
     background-color: #1D3C34; /* pantone 560 C */
     margin-top: 10px;
+    z-index: 3;
 }
 
 nav h1{
@@ -111,6 +112,47 @@ footer{
     background: #006F62;
 }
 
+/* Burger Menu */
+.burger-menu{
+    display: none;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%; 
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-links li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;    
+}
+
+.landing{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing h1{
+    margin: 100px;
+    color: #6BBBAE;
+    font-size: 50px;
+}
+
+.hamburger,
+.line,
+.line::before,
+.line::after{
+    display: none;
+}
+
 @media screen and (max-width: 700px) {
     .nav-item{
         font-size: 10px;
@@ -119,44 +161,185 @@ footer{
 
 
 @media screen and (max-width: 450px) {
-    .navbar{
+    .nav-item{
        display: none;
     }
-}
 
-/* Style the buttons inside the tab */
-.tab button {
-    display: block;
-    background-color: inherit;
-    color: black;
-    padding: 22px 16px;
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: left;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 17px;
-  }
+    /* Burger Menu */
+    .burger-menu{
+        display: flex;
+        background-color: #6BBBAE;
+    }
+
+    /*
+    nav{
+        position: relative;
+    }
+    */
+
+    .hamburger{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        border: 3px solid white;
+    }
+
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        border-radius: 5px;
+        display: block;
+        transition: all 1s ease-out;
+    }
+
+    .hamburger .line::before,
+    .hamburger .line::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background: white;
+        border-radius: 5px;
+        display: block;
+        transition: all 1s ease-out;
+    }
+
+    .hamburger .line::before{
+        top: 12px;
+        
+    }
+
+    .hamburger .line::after{
+        bottom: 12px;
+        transition: all 1s ease-out;
+    }
+
+    .hamburger .line.active::before{
+        animation: burgerComplicated2 0.5s ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    .hamburger .line.active{
+        transition: all 1s ease-out;
+        background: transparent;
+    }
+
+    .hamburger .line.active::after{
+        animation: burgerComplicated1 0.5s ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    .nav-links{
+        position: fixed;
+        background-color: #6BBBAE;
+        height: 90vh;
+        width: 50%;
+        flex-direction: column;
+        /*display: none;*/
+        clip-path: circle(0px at 90% -10%);
+        -webkit-clip-path: circle(0px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+        z-index: 10;
+        margin-top: 40px;
+    }
+
+    @keyframes burgerComplicated1 {
+        0%{
+            transform: rotate(0deg);
+        }
+    
+        100%{
+            transform: rotate(45deg) translate(-5px, -7px);
+        }
+    }
+
+    @keyframes burgerComplicated2 {
+        0%{
+            transform: rotate(0deg);
+        }
+    
+        100%{
+            transform: rotate(-45deg) translate(-5px, 7px);
+        }
+    }
+
+    .nav-links.open{
+        clip-path: circle(1200px at 90% -10%);
+        -webkit-clip-path: circle(1200px at 90% -10%);
+        pointer-events: all;
+    }
+
+    .landing{
+        flex-direction: column;
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+
+    .nav-links li a {
+        font-size: 25px;
+    }
+
+    .nav-links li:nth-child(1){
+        transition: all 0.5s ease-in 0.2s;
+    }
+
+    .nav-links li:nth-child(2){
+        transition: all 0.5s ease-in 0.5s;
+    }
+
+    .nav-links li:nth-child(3){
+        transition: all 0.5s ease-in 0.7s;
+    }
+
+    li.fade{
+        opacity: 1;
+    }
+
+
+    /*
+    .tab button {
+        display: block;
+        background-color: inherit;
+        color: black;
+        padding: 22px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 17px;
+    }
   
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #ddd;
-  }
-  
-  /* Create an active/current "tab button" class */
-  .tab button.active {
-    background-color: #ccc;
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
-    float: left;
-    padding: 0px 12px;
-    border: 1px solid #ccc;
-    width: 70%;
-    border-left: none;
-    height: 300px;
-  }
+    .tab button:hover {
+        background-color: #ddd;
+    }
+
+    .tab button.active {
+        background-color: #ccc;
+    }
+
+    .tabcontent {
+        float: left;
+        padding: 0px 12px;
+        border: 1px solid #ccc;
+        width: 70%;
+        border-left: none;
+        height: 300px;
+    }
+    */
 }
 
