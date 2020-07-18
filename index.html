@@ -20,12 +20,14 @@
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/projects.css">
     <link rel="stylesheet" href="./css/getmycv.css">
+
+    <script src="experience.js"></script>
     
     <title>Erwan Spilmont | Frontend Developer</title>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <nav class="navbar">
-        <h1><a class="me">Erwan Spilmont</a></h1>
+        <h1><a class="me" id="me" href="#intro">ES</a></h1>
         <ul class="nav-item">
             <li id="aboutLink"><a  class="nav-link" href="#about">About</a></li>
             <li id="experienceLink"><a class="nav-link" href="#experience">Experience</a></li>
@@ -35,23 +37,27 @@
     </nav>
 
     <main>
-        <section class="intro">
+        <section class="intro" id="intro">
             <div id="intro-container">
                 <h4 class="intro-title">hi, my name is</h4>
                 <h1 class="introname">Erwan Spilmont</h1>
                 <div class="introtext"> 
                 <p class="introp1">I am an aspiring Web Developer.</p>
                     <p class="introp2">I am a French Electronic & Embedded Software Engineer
-                        formerly based in Porto (Portugal), desiring to design amazing websites
-                        as a Developer.</p>
+                        formerly based in Porto (Portugal), desiring to design amazing experiences.</p>
                 </div>
             </div>
-          <!--<img class="intro-img" src="./images/snow.gif" alt="#">-->    
+          <!--<img class="intro-img" src="./images/snow.gif" alt="#">-->
+          <section id="section05" class="demo">
+            <a href="#about"><span></span> <div>About me</div> </a>
+          </section>
+            
+            
         </section>
         
         <section id="about" class="about"> <!--aussi présent id="about"-->
             <h2 class="section-title">About</h2>
-            <div class="about-bold">Programming enthoutiast for <span class="about-bold-colorized">Web & Electronic.</span><br>
+            <div class="about-bold">Programming enthusiast for <span class="about-bold-colorized">Web & Electronic.</span><br>
                                     Spending time <span class="about-bold-colorized">Producing Music.</span><br>
                                     Runner with <span class="about-bold-colorized">Stamina.</span>
             </div>
@@ -85,9 +91,7 @@
                                 <li><a href="#student1" data-toggle="tab">ENSEA</a></li>
                               </ul>
                         </div>    
-                      
-                      <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_vertical_tabs-->
-                              <!-- Tab panes -->
+                    
                               <div class="tab-content">
                                 <div class="tab-pane active" id="researcher">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae eu nulla 
@@ -103,30 +107,76 @@
                 </div>
             </div>
         -->
-
             <section id="experience" class="experience">
                 <h2 class="section-title">Experience</h2>
                 <div class="job-edu-container">
                     <div class="job-edu">
                         <div class="job-edu-title"><div>Jobs & Education</div></div>
                         <div class="navtab-container">
-                            <div class="col-xs-6 col-md-4">
-                                  <ul class="tab">
-                                    <li class="tablinks" onclick="openLocation(event, 'researcher')" id="defaultOpen"><a href="#researcher">INESC-TEC</a></li>
-                                    <li class="tablinks" onclick="openLocation(event, 'student0')"><a href="#student0">FEUP</a></li>
-                                    <li class="tablinks" onclick="openLocation(event, 'student1')"><a href="#student1">ENSEA</a></li>
-                                  </ul>
-                            </div>    
+                                <div class="tab">
+                                    <button class="tablinks" onclick="openLocation(event, 'researcher')" id="defaultOpen">INESC TEC</button>
+                                    <button class="tablinks" onclick="openLocation(event, 'student0')">FEUP</button>
+                                    <button class="tablinks" onclick="openLocation(event, 'student1')">ENSEA</button>
+                                </div>  
 
                                   <!-- Tab panes -->
-                                    <div id="researcher" class="tabcontent">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae eu nulla 
-                                        eleifend vestibulum placerat egestas. Nascetur lacus lacus turpis massa 
-                                        aliquet mauris consequat. Ornare diam venenatis morbi netus vulputate 
-                                        ullamcorper praesent et dictum. Pretium justo, non at feugiat.
+                                <div id="researcher" class="tabcontent">
+                                    <div class="tabcontent-header">
+                                        Researcher <span>@ INESC TEC</span> 
                                     </div>
-                                    <div id="student0" class="tabcontent">Messages Tab.</div>
-                                    <div id="student1" class="tabcontent">Settings Tab.</div>
+                                    <div class="tabcontent-period-location">
+                                        <div class="period">2017-2020</div>
+                                        <div class="location">
+                                            <img src="./images/carbon_location.svg" alt="#"> Porto, Portugal</div>
+                                        </div>
+                                    <div class="description">
+                                        Work on an environmental sensing wearable device for first responder professionals (part of the VR2Market project)
+                                         as well as others prototypes within the Biomedical R&D team:
+                                        <li class="description-list-elt">Definition of new features based on new sensors and technologies available on the market</li>
+                                        <li class="description-list-elt">Creation and development of new prototypes based on BLE & RTOS</li>
+                                        <li class="description-list-elt">Creation of a Web user interface to interact with BLE devices</li> 
+                                        <li class="description-list-elt"> Documentation, tutorials and support of Master thesis student.</li>
+                                    </div>
+                                </div>
+                                
+                                <div id="student0" class="tabcontent">
+                                    <div class="tabcontent-header">
+                                        Student <span>@ FEUP</span> 
+                                    </div>
+                                    <div class="tabcontent-period-location">
+                                        <div class="period">Sept 2016- Feb 2017</div>
+                                        <div class="location">
+                                            <img src="./images/carbon_location.svg" alt="#"> Porto, Portugal</div>
+                                        </div>
+                                    <div class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Vitae eu nulla eleifend vestibulum placerat egestas. 
+                                        Nascetur lacus lacus turpis massa aliquet mauris consequat.
+                                        <li class="description-list-elt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae eu nulla eleifend vestibulum</li>
+                                        <li class="description-list-elt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae eu nulla eleifend vestibulum placerat egestas. Nascetur lacus</li>
+                                        <li class="description-list-elt">tetur adipiscing elit. Vitae eu nulla eleifend vestibulum placerat egestas. Nascetur l</li> 
+                                    </div>
+                                </div>
+                                <div id="student1" class="tabcontent">
+                                    <div class="tabcontent-header">
+                                        Student <span>@ ENSEA</span> 
+                                    </div>
+                                    <div class="tabcontent-period-location">
+                                        <div class="period">2013-2017</div>
+                                        <div class="location">
+                                            <img src="./images/carbon_location.svg" alt="#"> Cergy, France</div>
+                                        </div>
+                                    <div class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Vitae eu nulla eleifend vestibulum placerat egestas. 
+                                        Nascetur lacus lacus turpis massa aliquet mauris consequat.
+                                        <li class="description-list-elt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae eu nulla eleifend vestibulum</li>
+                                        <li class="description-list-elt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae eu nulla eleifend vestibulum placerat egestas. Nascetur lacus</li>
+                                        <li class="description-list-elt">tetur adipiscing elit. Vitae eu nulla eleifend vestibulum placerat egestas. Nascetur l</li> 
+                                    </div>
+                                </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -162,16 +212,16 @@
                                     Tools
                                 </div>
                                 <div class="tools-logo">
-                                    <div class="skills-item"><img src="./images/Skills/logos_visualstudio.svg" alt="#"></div>
-                                    <div class="skills-item"><img src="./images/Skills/logos_git-icon.svg" alt="#"></div>
-                                    <div class="skills-item"><img src="./images/Skills/logos_github-icon.svg" alt="#"></div>
-                                    <div class="skills-item"><img src="./images/Skills/logos_chrome.svg" alt="#"></div>
-                                    <div class="skills-item"><img src="./images/Skills/logos_figma.svg" alt="#"></div>
+                                    <div class="skills-item" aria-describedby="tooltip" data-toggle="tooltip" title="Visual Studio Code"><img src="./images/Skills/logos_visualstudio.svg" alt="#"></div>
+                                    <div class="skills-item" aria-describedby="tooltip" data-toggle="tooltip" title="Git"><img src="./images/Skills/logos_git-icon.svg" alt="#"></div>
+                                    <div class="skills-item" aria-describedby="tooltip" data-toggle="tooltip" title="Github"><img src="./images/Skills/logos_github-icon.svg" alt="#"></div>
+                                    <div class="skills-item" aria-describedby="tooltip" data-toggle="tooltip" title="Chrome DevTools"><img src="./images/Skills/logos_chrome.svg" alt="#"></div>
+                                    <div class="skills-item" aria-describedby="tooltip" data-toggle="tooltip" title="Figma"><img src="./images/Skills/logos_figma.svg" alt="#"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
 
                 <div class="line"></div>
 
@@ -188,15 +238,15 @@
                                 <div class="img-dev-tools">Development</div> 
                             </div>
                             <div class="skills-line1">
-                              <div class="skills-item"><img src="./images/Skills/Engineer/Developmentname/c.svg" alt="#"></div>  
-                              <div class="skills-item"><img src="./images/Skills/Engineer/Developmentname/freertos.svg" alt="#"></div>   
-                              <div class="skills-item"><img src="./images/Skills/Engineer/Developmentname/ble.svg" alt="#"></div>
+                              <div class="skills-item" aria-describedby="tooltip" data-toggle="tooltip" title="C"><img src="./images/Skills/Engineer/Developmentname/c.svg" alt="#"></div>  
+                              <div class="skills-item" aria-describedby="tooltip" data-toggle="tooltip" title="FreeRTOS"><img src="./images/Skills/Engineer/Developmentname/freertos.svg" alt="#"></div>   
+                              <div class="skills-item" aria-describedby="tooltip" data-toggle="tooltip" title="BLE"><img src="./images/Skills/Engineer/Developmentname/ble.svg" alt="#"></div>
                             </div>
                             <div class="learning"> </div>
                             <div class="skills-line2">
-                                <div class="skills-item"><img src="./images/Skills/Engineer/Developmentname/arduino.svg" alt="#"></div>  
-                                <div class="skills-item"><img src="./images/Skills/Engineer/Developmentname/pic.svg" alt="#"></div>   
-                                <div class="skills-item"><img src="./images/Skills/Engineer/Developmentname/arm.svg" alt="#"></div>  
+                                <div class="skills-item" aria-describedby="tooltip" data-toggle="tooltip" title="Arduino"><img src="./images/Skills/Engineer/Developmentname/arduino.svg" alt="#"></div>  
+                                <div class="skills-item" aria-describedby="tooltip" data-toggle="tooltip" title="PIC μP"><img src="./images/Skills/Engineer/Developmentname/pic.svg" alt="#"></div>   
+                                <div class="skills-item" aria-describedby="tooltip" data-toggle="tooltip" title="ARM μP"><img src="./images/Skills/Engineer/Developmentname/arm.svg" alt="#"></div>  
                             </div>
 
                             <div class="tools-container">
@@ -205,11 +255,11 @@
                                     Tools
                                 </div>
                                 <div class="tools-logo">
-                                    <div class="skills-item"><img src="./images/Skills/Tools/solder-iron.svg" alt="#"></div>
-                                    <div class="skills-item"><img src="./images/Skills/Tools/signal-analyser.svg" alt="#"></div>
-                                    <div class="skills-item"><img src="./images/Skills/logos_git-icon.svg" alt="#"></div>
-                                    <div class="skills-item"><img src="./images/Skills/Tools/logos_gitlab.svg" alt="#"></div>
-                                    <div class="skills-item"><img src="./images/Skills//Tools/logos_trello.svg " alt="#"></div>
+                                    <div class="skills-item" aria-describedby="tooltip" data-toggle="tooltip" title="Solder & Iron"><img src="./images/Skills/Tools/solder-iron.svg" alt="#"></div>
+                                    <div class="skills-item" aria-describedby="tooltip" data-toggle="tooltip" title="Signal Analyser"><img src="./images/Skills/Tools/signal-analyser.svg" alt="#"></div>
+                                    <div class="skills-item" aria-describedby="tooltip" data-toggle="tooltip" title="Git"><img src="./images/Skills/logos_git-icon.svg" alt="#"></div>
+                                    <div class="skills-item" aria-describedby="tooltip" data-toggle="tooltip" title="Gitlab"><img src="./images/Skills/Tools/logos_gitlab.svg" alt="#"></div>
+                                    <div class="skills-item" aria-describedby="tooltip" data-toggle="tooltip" title="Trello"><img src="./images/Skills//Tools/logos_trello.svg " alt="#"></div>
                                 </div>
                             </div>
                         </div>
@@ -224,14 +274,19 @@
             <div class="project-container">
                 <div class="project-thumbnail-left"></div>
                 <div class="project-presentation-left">
-                    <div class="project-name">Project Name</div>
+                    <div class="project-name">Portfolio V1</div>
                     <div class="project-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Donec eu cras non suspendisse tellus feugiat leo purus.
-                        Placerat ut aliquam vestibulum a, ac mi vestibulum, viverra.
-                        Viverra proin dis purus cum egestas varius. Consectetur venenatis,
-                        tristique lorem feugiat enim mauris donec tempor.
+                        This portfolio was made to strenghen the knowledge of basic web design languages,
+                        mixing various established technologies and support. 
+                        I tried to insist onto the readability, design and presentation so that users
+                        can appreciate going through it effortlessly.
                     </div>
+                    <ul class="project-tools">
+                        <li class="project-tool">HTML</li>
+                        <li class="project-tool">CSS</li>
+                        <li class="project-tool">Javascript</li>
+                        <li class="project-tool">Bootstrap</li>
+                    </ul>
                 </div>
             </div>
 
@@ -245,6 +300,12 @@
                         Viverra proin dis purus cum egestas varius. Consectetur venenatis,
                         tristique lorem feugiat enim mauris donec tempor.
                     </div>
+                    <ul class="project-tools">
+                        <li class="project-tool">React</li>
+                        <li class="project-tool">Wordpress</li>
+                        <li class="project-tool">Javascript</li>
+                        <li class="project-tool">Bootstrap</li>
+                    </ul>
                 </div>
                 <div class="project-thumbnail-right"></div>
             </div>
@@ -260,6 +321,12 @@
                         Viverra proin dis purus cum egestas varius. Consectetur venenatis,
                         tristique lorem feugiat enim mauris donec tempor.
                     </div>
+                    <ul class="project-tools">
+                        <li class="project-tool">HTML</li>
+                        <li class="project-tool">CSS</li>
+                        <li class="project-tool">Javascript</li>
+                        <li class="project-tool">Bootstrap</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -279,7 +346,6 @@
     </footer>
 
     <script src="navbar.js"></script>
-    <script src="experience.js"></script>
     <script>
         // init controller
        let controller = new ScrollMagic.Controller();
@@ -290,6 +356,12 @@
         //    offset: 100 // start this scene after scrolling for 50px
         })
             .setPin('#intro-container') // pins the element for the the scene's duration
+            .addTo(controller); // assign the scene to the controller
+
+        var sceneIntro1 = new ScrollMagic.Scene({
+            duration: 200, // the scene should last for a scroll distance of 100px
+        })
+            .setPin('.demo a') // pins the element for the the scene's duration
             .addTo(controller); // assign the scene to the controller
 
         var sceneAbout = new ScrollMagic.Scene({
@@ -360,7 +432,12 @@
                          triggerHook: 100,
                         })
                         .setClassToggle("#contactLink", "activeNavLink") // add class toggle
-					    .addTo(controller);
+                        .addTo(controller);
+                        
+
+    // Get the element with id="defaultOpen" and click on it -> to activate default tab
+    // Working in coop with experience.js
+    document.getElementById("defaultOpen").click();
     </script>
 </body>
 </html>

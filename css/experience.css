@@ -1,182 +1,33 @@
 .experience{
-    height: 1837px;
+   /* height: 1400px;*/
+    height: auto;
     margin-top: 25px;
     margin-bottom: 25px;
     padding-top: 25px;
     padding-bottom: 25px;
 }
 
-.job-edu-container{
-    width: 100%;
-    height: 560px;
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-.job-edu{
-    width: 951px;
-    height: 420px;
-
-    background: #00594C;
-    border-radius: 30px;
-}
-
-.job-edu-title{
-    width: 100%;
-    height: 95px;
-
-    
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 30px;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    color: #EEEEEE;
-
-    background: transparent;
-}
-
-.job-edu-title div{
-    background: transparent;
-}
-
-.navtab-container{
-    display: flex;
-    align-items: center;
-    justify-items: center;
-
-    justify-content: space-between;
-
-    background-color: transparent;
-}
-
-#navtab-links{
-    text-decoration: none;
-    list-style: none;
-
-    background-color: transparent;
-
-    margin: 20px;
-}
-
-#navtab-links li{
-    width: 290px;
-    height: 60px;
-
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    justify-content: start;
-
-    background-color: transparent;
-}
-
-.navtab-link{
-
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 20px;
-
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-
-    color: #EEEEEE;
-
-    text-decoration-color: transparent;
-    background-color: transparent;
-}
-
-.navtab-link:hover,
-.navtab-link:focus{
-    color: #EEEEEE;
-    text-decoration-color: transparent;
-}
-
-.location{
-    padding-left: 5px;
-    
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #6BBBAE;
-
-    background-color: transparent;
-}
-
-.navtab{
-    background-color: transparent;
-}
-
-.tab-pane{
-    width: 620px;
-    height: 295px; 
-    background: #00594C;
-}
-
-.tabs-left{
-
-    display: flex;
-    flex-direction: column;
-
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-
-    justify-content: start;
-
-    color: #EEEEEE;
-
-    border: none;
-    background-color: transparent;
-}
-
-.tabs-left li a{
-    width: 100%;
-    color: #EEEEEE;
-}
-
-.col-xs-6,
-.tabs-left li,
-.tabs-left li a span{
-    background-color: transparent;
-}
-
-
-
 /* Experience -> Skills */
 .skills{
-    height: 911px;
+    height: 710px;
+    max-width: 1024px;
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin: auto;
 }
 
 .dev-skills{
     height: 700px;
-    width: 405px;
+    max-width: 405px;
+    min-width: 275px;
+    width: 25vw;
+    margin: 2vw;
 }
 
 .skills-title{
-    height: 132px;
+    height: 125px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -208,7 +59,7 @@
 }
 
 .dev-and-tools{
-    height: 565px;
+    height: 450px;
     background: #00594C;
     border-radius: 30px;
     justify-content: center;
@@ -220,17 +71,19 @@
 .img-dev-tools
 {
     background: transparent;
+    margin: 2px;
 }
 
 
 .dev-container{
-    width: 405px;
-    height: 375px;
+    max-width: 405px;
+    width: 100%;
+    height: 370px;
 }
 
 .dev-tools-title{
     width: 100%;
-    height: 85px;
+    height: 70px;
 
     font-style: normal;
     font-weight: bold;
@@ -249,37 +102,38 @@
 
 .skills-line1{
     width: 100%;
-    height: 105px;
+    max-width: 400px;
+    height: 65px;
     
     display: flex;
     justify-content: space-evenly;
 
-    padding: 10px;
     background: transparent;
 
-    margin-top: 10px;
+    margin: 10px 0px;
+    margin-bottom: 15px;
 
 }
 
 .skills-line2{
     width: 100%;
-    height: 100px;
+    max-width: 400px;
+    height: 60px;
     
     display: flex;
     justify-content: space-evenly;
 
-    padding: 10px;
+    margin: 10px 0px;
     background: transparent;
 
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
 }
 
 .skills-item{
-    width: 108px;
     height: 64px;
     background: transparent;
-    margin: 5px;
+    margin: 0;
 
     display: flex;
     align-items: center;
@@ -291,7 +145,6 @@
 .skills-item img{
     background: transparent;
     justify-content: center;
-
 }
 
 .learning{
@@ -310,7 +163,7 @@
 }
 
 .tools-container{
-    width: 405px;
+    width: 100%;
     height: 160px;
 }
 
@@ -321,15 +174,333 @@
     display: flex;
     align-items: center;
     justify-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .line{
     width: 1px;
-    height: 500px;
+    height: 350px;
     
     background-color: #6BBBAE;
-
-    margin: 0px 60px;
-    margin-top: 135px;
 }
+
+
+/* Experience -> Jobs & Educaton */
+.job-edu-container{
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    justify-content: center;
+    margin: 50px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.job-edu{
+    width: 100%;
+    max-width: 900px;
+    min-width: 290px;
+    height: auto;
+    min-height: 450px;
+
+    background: #00594C;
+    border-radius: 30px;
+}
+
+.job-edu-title{
+    width: 100%;
+    height: 95px;
+
+    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #EEEEEE;
+
+    background: transparent;
+}
+
+.job-edu-title div{
+    background: transparent;
+}
+
+.navtab-container{
+    width: auto;
+    height: 100%;
+    min-height: max-content;
+    /*
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+    justify-content: space-between;
+    */
+    display: grid;
+    /*grid-template-rows: minmax(25%, 150px) 2fr;*/
+    grid-template-columns: minmax(25%, 150px) 2fr;
+
+    background-color: transparent;
+}
+
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    max-width: 250px;
+    height: 100%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    width: 100%;
+    max-width: 250px;
+    height: 30%;
+
+    display: block;
+    background-color: transparent;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+
+    border-radius: 0px 40px 40px 0px;
+
+    margin-right: 7vw;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover:not(.active){
+    color: #6BBBAE;
+    background-color: transparent;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active{ 
+    background-color: #006F62;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: none;
+    width: 95%;
+    border-left: none;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+
+    background-color: transparent;
+}
+
+.tabcontent-header{
+    margin: 10px;
+
+    background-color: transparent;
+
+    width: 100%;
+
+    font-family: Anonymous Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+
+    color: #EEEEEE;
+    margin: 10px;
+}
+
+.tabcontent-header span{
+    color: #6BBBAE;
+    background-color: transparent;
+}
+
+.tabcontent-period-location{
+    width: 100%;
+
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+    justify-content: space-evenly;
+
+    background-color: inherit;
+}
+
+.period,
+.location,
+.location img{
+    background-color: inherit;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #EEEEEE;
+
+    padding: 0px 3px;
+}
+
+.period,
+.location{
+    width: 50%;
+}
+
+.location img{
+    transform: scale(0.7);
+}
+
+.description,
+.description li{
+    background-color: inherit;
+    text-align: justify;
+    padding: 3px;
+}
+
+.description{
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
+@media screen and (max-width: 800px){
+    /*  .experience{
+          height: 300vh;
+          min-height: 2000px;
+          max-height: 2500px;
+      }*/
+  
+      .job-edu-container{
+          height: auto;
+      }
+
+      .navtab-container{
+        grid-template-columns: minmax(15%, 115px) 2fr;
+      }
+
+      /*
+      .job-edu{
+          width: 100%;
+          max-width: 900px;
+          height: auto;
+          min-height: 660px; 
+      
+          background: #00594C;
+          border-radius: 30px;
+      }*/
+  
+      .job-edu{
+          height: auto;
+          min-height: 550px;
+          margin: 20px 0px;
+      }
+      
+      .job-edu-title{
+          width: 100%;
+          height: 95px;
+      
+          
+          font-style: normal;
+          font-weight: bold;
+          font-size: 30px;
+          line-height: 30px;
+          
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      
+          color: #EEEEEE;
+      
+          background: transparent;
+      }
+      
+      .job-edu-title div{
+          background: transparent;
+      }
+  
+      .tab button{
+          font-size: 17px;
+          line-height: 17px;
+      }
+  
+      .skills{
+          /* Experience -> Skills */
+          min-height: 1300px;
+          max-height: 1400px;
+          flex-direction: column;
+      }
+  
+      .line{
+          transform: rotate(90deg);
+          height: 30vh;
+      }
+  
+      .skills-title{
+          height: 90px;
+      }
+  }
+
+  @media screen and (max-width: 600px){
+      .navtab-container{
+        height: auto;
+        grid-template-rows: minmax(15%, 70px) 2.2fr;
+        grid-template-columns: none;
+        margin-bottom: 5vh;
+        min-width: 290px;
+      }
+
+      /* Style the tab */
+    .tab {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+
+        justify-content: space-evenly;
+
+        max-width: 100%;
+    }
+
+    .tab button{
+        width: 100%;
+        height: 100%;
+    
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+    
+        border-radius: 20px 20px 20px 20px;
+
+        margin: 0;
+    }
+    
+  }
+  
+  @media screen and (max-width: 450px){
+      .dev-container{
+          transform: scale(0.9);
+      }
+  }

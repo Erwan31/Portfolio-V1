@@ -1,6 +1,7 @@
 .about{
     width: 100%;
-    height: 724px;
+ /*   height: 724px;*/
+    height: auto;
     margin-top: 25px;
     margin-bottom: 50px;
     padding-top: 25px;
@@ -34,7 +35,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 45px;
-    line-height: 45px;
+    line-height: 47px;
 
     color: #EEEEEE;
 }
@@ -68,6 +69,7 @@
     position: relative;
     width: 700px;
     height: 423px;
+    background-color: transparent;
 }
 
 .portrait-polygon{
@@ -255,3 +257,95 @@
 /*    animation-delay: 3s;
     animation: float2 30s ease infinite; */
 }
+
+@media screen and (max-width: 1025px){
+
+    .about-bold{
+        margin: 0;
+        margin-top: 3vw;
+        margin-bottom: 3vw; 
+    
+        width: 100%;
+    }
+    
+    .portrait-container{
+        transform: scale(0.7);
+        margin-left: -50px;
+        margin-top: -30px;
+    }
+
+    .aboutp1{
+        width: 100%;
+        margin-top: 1vw;
+        margin-left: 0;
+        font-size: 17px;
+        line-height: 17px;
+    }
+}
+
+@media screen and (max-width: 750px){
+ /*
+    .about{
+        height: 100vh;
+    }*/
+
+    .about-portrait{
+        margin-top: 15px;
+        flex-direction: column-reverse;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+        min-height: 550px;
+    }
+
+    .portrait-container{
+        transform: scale(0.7);
+        margin-left: -50px;
+    }
+
+    .about-bold{
+        font-size: 35px;
+        line-height: 36px;
+        padding-top: 35px;
+    }
+}
+
+@media screen and (max-width: 450px){
+/*
+    .about{
+        height: 150vh;
+        min-height: 950px;
+    }*/
+
+    .about-bold{
+        font-size: 30px;
+        line-height: 31px;
+        padding-top: 30px;
+    }
+
+    .portrait-container{
+        transform: scale(0.5);
+        margin-left: 0px;
+        margin-top: 15px;
+        margin-bottom: 0px; 
+    }
+
+    .about-portrait{
+        margin-top: 15px;
+        flex-direction: column-reverse;
+        justify-items: center;
+        align-items: center;
+        justify-content: space-around;
+        height: 80vh;
+        min-height: 600px;
+    }
+
+    .aboutp1{
+        margin-top: 10px;
+    }
+
+
+}
+
+

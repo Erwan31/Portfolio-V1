@@ -6,7 +6,7 @@
 
 .project-container{
     width: 100%;
-    height: 492px;
+    height: 25%;
 
     display: flex;
     align-items: center;
@@ -20,23 +20,28 @@
 }
 
 .project-thumbnail-left{
-    width: 576px;
+    width: 40vw;
+    max-width: 600px;
     height: 320px;
 
-    background-image: url(../images/figma-navbar.PNG);
+    background-image: url(../images/capture-portfoliov1-mid.png);
     background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     margin-top: 86px;
     margin-bottom: 86px;
-    margin-left: 115px;
-    margin-right: -70px;
+    margin-left: 0;
+    margin-right: -5vw;
 }
 
 .project-presentation-left{
-    width: 443px;
-    height: 239px;
-    
+ /*   width: 445px;
+    height: 250px;*/
+    max-width: 445px;
+    display: block;
+
     background: #EEEEEE;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
@@ -61,9 +66,47 @@
     background-color: transparent;
 }
 
+.project-thumbnail-right{
+    width: 40vw;
+    max-width: 600px;
+    height: 320px;
+
+    background-image: url(../images/figma-navbar.PNG);
+    background-blend-mode: overlay;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    margin-top: 86px;
+    margin-bottom: 86px;
+    margin-right: 0;
+    margin-left: -5vw;
+}
+
+.project-presentation-right{
+    max-width: 445px;
+    display: block;
+
+    background: #EEEEEE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+    padding: 30px;
+
+    z-index: 2;
+}
+
+.project-tools{
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    flex-direction: row;
+}
+
 .project-text{
+    /*
     width: 364px;
-    height: 160px;
+    height: 160px;*/
+    display: block;
 
     font-style: normal;
     font-weight: normal;
@@ -77,33 +120,111 @@
     background-color: transparent;
 
     text-align:justify;
-    margin: 0;
+    margin: 5px 0px;
 }
 
-.project-thumbnail-right{
-    width: 576px;
-    height: 320px;
 
-    background-image: url(../images/figma-navbar.PNG);
-    background-blend-mode: overlay;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-    margin-top: 86px;
-    margin-bottom: 86px;
-    margin-right: 115px;
-    margin-left: -70px;
-
+.project-tool{
+    list-style: none;
+    color: #6BBBAE;
+    background-color: transparent;
+    margin: 1vw;
 }
 
-.project-presentation-right{
-    width: 443px;
-    height: 239px;
+@media screen and (max-width: 850px){
+
+    .project-thumbnail-left{
+        transform: scale(0.8);
+        margin-right: -6vw;
+        z-index: 0;
+    }
+
+    .project-presentation-left{
+        z-index: 2;
+    }
+
+    .project-thumbnail-right{
+        transform: scale(0.8);
+        margin-left: -6vw;
+        z-index: 0;
+    }
+
+    .project-presentation-right{
+        z-index: 2;
+    }
+
+/*
+    .project-presentation-left{
+        width: 40vw;
+        min-width: 230px;
+        height: 50vh;
     
-    background: #EEEEEE;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+        padding: 20px;
+    }
 
-    padding: 30px;
+    .project-name{
+        width: 90%;
+        height: 30px;
+    }
+    
+    .project-text{
+        width: 90%;
+        height: 80%;
+        margin-top: 10px;
+    }
+    */
+}
 
-    z-index: 1;
+@media screen and (max-width: 725px){
+    .project-presentation-left{
+        background-image: url(../images/capture-portfoliov1-mid.png);
+        background-blend-mode: overlay;
+        background-size: contain;
+        color: white;
+    }
+
+    .project-thumbnail-left{
+        display: none;
+    }
+
+    .project-presentation-right{
+        background-image: url(../images/figma-navbar.PNG);
+        background-blend-mode: overlay;
+        background-size: contain;
+        color: white;
+    }
+
+    .project-thumbnail-right{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px){
+
+    .projects{
+        width: 100%;
+        height: auto;
+    }
+
+    .project-container{
+        height: auto;
+        margin: 40px 0px;
+        max-width: 100%;
+    }
+
+    .project-presentation-left,
+    .project-presentation-right,
+    .project-tools{
+        height: auto;
+        max-width: 80vw;
+    }
+
+    .project-text{
+        margin: 15px 0px;
+    }
+
+    .project-tools{
+        justify-content: stretch;
+        height: auto;
+    }
 }
