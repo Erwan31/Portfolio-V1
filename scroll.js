@@ -67,7 +67,6 @@ function setScrollMagicInit(){
                     duration: heightAbout, // hide 10% before exiting view (80% + 10% from bottom)
                     })
                     .setClassToggle("#aboutLink", "activeNavLink") // add class toggle
-                    .addIndicators() // add indicators (requires plugin)
                     .addTo(controller);
 
     
@@ -76,7 +75,6 @@ function setScrollMagicInit(){
                     duration: heightExp*0.6, // hide 10% before exiting view (80% + 10% from bottom)
                     })
                     .setClassToggle("#experienceLink", "activeNavLink") // add class toggle
-                    .addIndicators() // add indicators (requires plugin)
                     .addTo(controller);
 
 
@@ -85,7 +83,6 @@ function setScrollMagicInit(){
                     duration: heightProjects-2*heightContact, // hide 10% before exiting view (80% + 10% from bottom)
                     })
                     .setClassToggle("#projectsLink", "activeNavLink") // add class toggle
-                    .addIndicators() // add indicators (requires plugin)
                     .addTo(controller);
 
     
@@ -95,7 +92,7 @@ function setScrollMagicInit(){
                     triggerHook: 100,
                     })
                     .setClassToggle("#contactLink", "activeNavLink") // add class toggle
-                    .addIndicators() // add indicators (requires plugin)
+                   // .addIndicators() // add indicators (requires plugin)
                     .addTo(controller);
                     
 

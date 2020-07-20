@@ -1,5 +1,3 @@
-"use strict";
-
 function openLocation ( evt , place) {
 
     console.log( evt );
@@ -19,3 +17,46 @@ function openLocation ( evt , place) {
     document.getElementById(place).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+/* 
+"use strict";
+
+const tabctt = document.getElementsByClassName("tabcontent");
+const tabLinks = document.querySelectorAll('.tablinks');
+
+
+function tabLinksClickListener(){
+  tabLinks.forEach( link => {
+    link.addEventlistener('click', (event) => {
+      openLocation ( event , event.target.value);
+      console.log('click sa race');
+      console.log(event.target.value);
+    });
+  });
+  
+}
+
+tabLinksClickListener();
+
+
+
+function openLocation ( evt , place) {
+
+   // console.log( evt );
+    console.log("click on ", place);
+    console.log("tabcontent lenght: ", tabctt.length);
+    let i;
+
+    for (i = 0; i < tabctt.length; i++) {
+      tabctt[i].style.display = "none";
+    }
+    
+    for (i = 0; i < tabLinks.length; i++) {
+      tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(place).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+*/
