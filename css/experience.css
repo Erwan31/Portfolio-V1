@@ -279,6 +279,7 @@
     line-height: 20px;
 
     border-radius: 0px 40px 40px 0px;
+    border: none;
 
     margin-right: 7vw;
 }
@@ -294,6 +295,9 @@
     background-color: #006F62;
 }
 
+.tab button:focus{
+    outline: none;
+}
 /* Style the tab content */
 .tabcontent {
     float: left;

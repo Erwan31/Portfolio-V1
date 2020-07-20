@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/projects.css">
     <link rel="stylesheet" href="./css/getmycv.css">
+    <link rel="stylesheet" href="./css/burger.css">
+    <link rel="stylesheet" href="./burger/dist/hamburgers.css">
+
 
     <script src="experience.js"></script>
     
@@ -34,6 +37,20 @@
             <li id="projectsLink"><a class="nav-link" href="#projects">Projects</a></li>
             <li id="contactLink"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
+        <div class="burger-menu">
+            <div class="burger burger-rotate">
+                <div class="burger-lines"></div>
+              </div>
+                  
+                  
+                  
+            <ul class="nav-links">
+                <li id="aboutLink"><a  class="nav-link" href="#about">About</a></li>
+                <li id="experienceLink"><a class="nav-link" href="#experience">Experience</a></li>
+                <li id="projectsLink"><a class="nav-link" href="#projects">Projects</a></li>
+                <li id="contactLink"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <main>
@@ -195,15 +212,15 @@
                                 <div class="img-dev-tools">Development</div> 
                             </div>
                             <div class="skills-line1">
-                              <div class="skills-item"><img src="./images/Skills/Dev/Developmentname/html5.svg" alt="#"></div>  
-                              <div class="skills-item"><img src="./images/Skills/Dev/Developmentname/css.svg" alt="#"></div>   
-                              <div class="skills-item"><img src="./images/Skills/Dev/Developmentname/js.svg" alt="#"></div>
+                              <div class="skills-item" aria-describedby="tooltip" data-toggle="tooltip" title="HTML5"><img src="./images/Skills/Dev/Developmentname/html5.svg" alt="#"></div>  
+                              <div class="skills-item" aria-describedby="tooltip" data-toggle="tooltip" title="CSS3"><img src="./images/Skills/Dev/Developmentname/css.svg" alt="#"></div>   
+                              <div class="skills-item" aria-describedby="tooltip" data-toggle="tooltip" title="Javascript"><img src="./images/Skills/Dev/Developmentname/js.svg" alt="#"></div>
                             </div>
                             <div class="learning">Learning...</div>
                             <div class="skills-line2">
-                                <div class="skills-item"><img src="./images/Skills/Dev/Developmentname/react.svg" alt="#"></div>  
-                                <div class="skills-item"><img src="./images/Skills/Dev/Developmentname/node1.svg" alt="#"></div>   
-                                <div class="skills-item"><img src="./images/Skills/Dev/Developmentname/wordpress.svg" alt="#"></div>  
+                                <div class="skills-item" aria-describedby="tooltip" data-toggle="tooltip" title="React"><img src="./images/Skills/Dev/Developmentname/react.svg" alt="#"></div>  
+                                <div class="skills-item" aria-describedby="tooltip" data-toggle="tooltip" title="Node.js"><img src="./images/Skills/Dev/Developmentname/node1.svg" alt="#"></div>   
+                                <div class="skills-item" aria-describedby="tooltip" data-toggle="tooltip" title="Wordpress"><img src="./images/Skills/Dev/Developmentname/wordpress.svg" alt="#"></div>  
                             </div>
 
                             <div class="tools-container">
@@ -345,7 +362,10 @@
         <p class="contact-designer">Designed & Built by Erwan Spilmont - 2020</p>
     </footer>
 
+    <script src="burger.js"></script>
     <script src="navbar.js"></script>
+
+
     <script>
         // init controller
        let controller = new ScrollMagic.Controller();
@@ -397,10 +417,10 @@
                         .setClassToggle("#mvt2", "visible") // add class toggle
 					    .addTo(controller);
 
-        const heightAbout = document.getElementById("about").offsetHeight;
-        const heightExp = document.getElementById("experience").offsetHeight;
-        const heightProjects = document.getElementById("projects").offsetHeight;
-        const heightContact = document.getElementById("contact").offsetHeight;
+        let heightAbout = document.getElementById("about").offsetHeight;
+        let heightExp = document.getElementById("experience").offsetHeight;
+        let heightProjects = document.getElementById("projects").offsetHeight;
+        let heightContact = document.getElementById("contact").offsetHeight;
 
         var navAbout = new ScrollMagic.Scene({
                          triggerElement: "#about",
