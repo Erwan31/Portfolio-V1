@@ -61,6 +61,15 @@ window.onscroll = function (){
         scrollMarker.style.display = 'none';
     }
     else scrollMarker.style.display = 'inline-block';
+
+    /* Responsive case, make the burger menu dissapear if scrolling */
+    if( document.querySelector('.open') !== null ){
+        navLinksBurger.classList.remove("open");
+        burger.classList.remove("open");
+        line.classList.toggle('active');
+        fadeLinks();
+        // console.log('click on main');
+    }
 }
 
 const nav = document.querySelector("nav");
@@ -107,7 +116,7 @@ function scrollStickyOrHidden() {
     if (scrollH > lastScrollTop && scrollH > 110){
        // downscroll code
        nav.classList.remove("navbar-fixed-top");
-       nav.style.top = -nav.offsetHeight + 'px';
+       nav.style.top = -nav.offsetHeight + 'px';      
     } else {
        // upscroll code
        nav.classList.add("navbar-fixed-top");
@@ -115,3 +124,17 @@ function scrollStickyOrHidden() {
     }
     lastScrollTop = scrollH <= 0 ? 0 : scrollH; // For Mobile or negative scrolling
 }
+
+/* Detect click on the main tag for responsive burger menu */
+const main = document.querySelector('main');
+
+main.addEventListener('click', () => {
+    if( document.querySelector('.open') !== null ){
+        navLinksBurger.classList.remove("open");
+        burger.classList.remove("open");
+        line.classList.toggle('active');
+        fadeLinks();
+        // console.log('click on main');
+    }
+}
+);

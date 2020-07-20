@@ -417,10 +417,10 @@
                         .setClassToggle("#mvt2", "visible") // add class toggle
 					    .addTo(controller);
 
-        const heightAbout = document.getElementById("about").offsetHeight;
-        const heightExp = document.getElementById("experience").offsetHeight;
-        const heightProjects = document.getElementById("projects").offsetHeight;
-        const heightContact = document.getElementById("contact").offsetHeight;
+        let heightAbout = document.getElementById("about").offsetHeight;
+        let heightExp = document.getElementById("experience").offsetHeight;
+        let heightProjects = document.getElementById("projects").offsetHeight;
+        let heightContact = document.getElementById("contact").offsetHeight;
 
         var navAbout = new ScrollMagic.Scene({
                          triggerElement: "#about",

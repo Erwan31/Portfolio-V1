@@ -251,7 +251,8 @@ footer{
     .nav-links{
         position: fixed;
        /* background-color: #6BBBAE;*/
-        height: 90vh;
+        height: 120vh;
+        padding-bottom: 25vh;
         width: 50%;
         flex-direction: column;
         /*display: none;*/
@@ -259,7 +260,7 @@ footer{
         -webkit-clip-path: circle(0px at 90% -10%);
         transition: all 1s ease-out;
         pointer-events: none;
-        z-index: 10;
+        z-index: 4;
         margin-top: 40px;
     }
 
