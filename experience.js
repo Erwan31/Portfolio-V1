@@ -1,3 +1,5 @@
+"use strict";
+
 function openLocation ( evt , place) {
 
     console.log( evt );

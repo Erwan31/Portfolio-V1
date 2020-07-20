@@ -20,9 +20,6 @@
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/projects.css">
     <link rel="stylesheet" href="./css/getmycv.css">
-    <link rel="stylesheet" href="./css/burger.css">
-    <link rel="stylesheet" href="./burger/dist/hamburgers.css">
-
 
     <script src="experience.js"></script>
     
@@ -361,103 +358,8 @@
         </div>
         <p class="contact-designer">Designed & Built by Erwan Spilmont - 2020</p>
     </footer>
-
-    <script src="burger.js"></script>
+    
     <script src="navbar.js"></script>
-
-
-    <script>
-        // init controller
-       let controller = new ScrollMagic.Controller();
-
-        // create a scene
-        var sceneIntro = new ScrollMagic.Scene({
-            duration: 200, // the scene should last for a scroll distance of 100px
-        //    offset: 100 // start this scene after scrolling for 50px
-        })
-            .setPin('#intro-container') // pins the element for the the scene's duration
-            .addTo(controller); // assign the scene to the controller
-
-        var sceneIntro1 = new ScrollMagic.Scene({
-            duration: 200, // the scene should last for a scroll distance of 100px
-        })
-            .setPin('.demo a') // pins the element for the the scene's duration
-            .addTo(controller); // assign the scene to the controller
-
-        var sceneAbout = new ScrollMagic.Scene({
-							triggerElement: ".portrait-container",
-							triggerHook: 0.8,
-							offset: 50, // move trigger to center of element
-							/*reverse: false // only do once*/
-						})
-						.setClassToggle("#reveal2", "visible") // add class toggle
-						.addTo(controller);
-
-        var translateSquare = new ScrollMagic.Scene({
-                            triggerElement: ".portrait-container",
-                            triggerHook: 0.8,
-                            offset: 50, // move trigger to center of element
-                        })
-                        .setClassToggle("#mvt0", "visible") // add class toggle
-					    .addTo(controller);
-
-        var translateTriangle = new ScrollMagic.Scene({
-                            triggerElement: ".portrait-container",
-                            triggerHook: 0.8,
-                            offset: 50, // move trigger to center of element
-                        })
-                        .setClassToggle("#mvt1", "visible") // add class toggle
-					    .addTo(controller);
-
-        var translateCircle = new ScrollMagic.Scene({
-                            triggerElement: ".portrait-container",
-                            triggerHook: 0.8,
-                            offset: 50, // move trigger to center of element
-                        })
-                        .setClassToggle("#mvt2", "visible") // add class toggle
-					    .addTo(controller);
-
-        let heightAbout = document.getElementById("about").offsetHeight;
-        let heightExp = document.getElementById("experience").offsetHeight;
-        let heightProjects = document.getElementById("projects").offsetHeight;
-        let heightContact = document.getElementById("contact").offsetHeight;
-
-        var navAbout = new ScrollMagic.Scene({
-                         triggerElement: "#about",
-                         duration: heightAbout, // hide 10% before exiting view (80% + 10% from bottom)
-                        })
-                        .setClassToggle("#aboutLink", "activeNavLink") // add class toggle
-					    .addTo(controller);
-
-        
-        var navExperience = new ScrollMagic.Scene({
-                         triggerElement: "#experience",
-                         duration: heightExp, // hide 10% before exiting view (80% + 10% from bottom)
-                        })
-                        .setClassToggle("#experienceLink", "activeNavLink") // add class toggle
-					    .addTo(controller);
-
-
-        var navProjects = new ScrollMagic.Scene({
-                         triggerElement: "#projects",
-                         duration: heightProjects-2*heightContact, // hide 10% before exiting view (80% + 10% from bottom)
-                        })
-                        .setClassToggle("#projectsLink", "activeNavLink") // add class toggle
-					    .addTo(controller);
-
-        
-        var navContact = new ScrollMagic.Scene({
-                         triggerElement: "#contact",
-                        /* duration: heightContact,*/
-                         triggerHook: 100,
-                        })
-                        .setClassToggle("#contactLink", "activeNavLink") // add class toggle
-                        .addTo(controller);
-                        
-
-    // Get the element with id="defaultOpen" and click on it -> to activate default tab
-    // Working in coop with experience.js
-    document.getElementById("defaultOpen").click();
-    </script>
+    <script src="scroll.js"></script>
 </body>
 </html>
