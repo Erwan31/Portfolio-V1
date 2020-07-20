@@ -171,6 +171,16 @@ footer{
        display: none;
     }
 
+    .activeNavLink{
+        background: transparent;
+    }
+
+    .activeNavLink .nav-link{
+        color: #006F62;
+    }
+
+
+
     /* Burger Menu */
     .burger-menu{
         display: flex;
