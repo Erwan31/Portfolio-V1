@@ -7,7 +7,7 @@ const windowW = window.innerWidth;
 
 const scrollMarker = document.querySelector(".demo a");
 
-const burger = document.querySelector('.hamburger');
+const burger = document.querySelector('.burger');
 const navLinksBurger = document.querySelector('.nav-links');
 const links = document.querySelectorAll('.nav-links li');
 const line = document.querySelector('.line');
@@ -15,6 +15,7 @@ const line = document.querySelector('.line');
 
 burger.addEventListener('click', (e) => {
     navLinksBurger.classList.toggle("open");
+    burger.classList.toggle("open");
     links.forEach( link => {
         if( e.target === link){
             console.log('click on target');
@@ -35,6 +36,7 @@ function navLink () {
             /*link.classList.add("active");*/
             console.log('click link');
             navLinksBurger.classList.remove("open");
+            burger.classList.remove("open");
             line.classList.toggle('active');
             fadeLinks();
         });

@@ -125,6 +125,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     margin-left: auto;
+    background-color: #1D3C34; /* pantone 560 C */
 }
 
 .nav-links li a{
@@ -161,6 +162,11 @@ footer{
 
 
 @media screen and (max-width: 450px) {
+
+    .navbar{
+        width: 100vw;
+    }
+
     .nav-item{
        display: none;
     }
@@ -168,7 +174,10 @@ footer{
     /* Burger Menu */
     .burger-menu{
         display: flex;
-        background-color: #6BBBAE;
+        justify-content: flex-end;
+        background-color: #1D3C34; /* pantone 560 C */
+        position: absolute;
+        right: 3vw;
     }
 
     /*
@@ -241,7 +250,7 @@ footer{
 
     .nav-links{
         position: fixed;
-        background-color: #6BBBAE;
+       /* background-color: #6BBBAE;*/
         height: 90vh;
         width: 50%;
         flex-direction: column;
@@ -293,15 +302,19 @@ footer{
     }
 
     .nav-links li:nth-child(1){
-        transition: all 0.5s ease-in 0.2s;
+        transition: all 0.5s ease-in 0.1s;
     }
 
     .nav-links li:nth-child(2){
-        transition: all 0.5s ease-in 0.5s;
+        transition: all 0.5s ease-in 0.2s;
     }
 
     .nav-links li:nth-child(3){
-        transition: all 0.5s ease-in 0.7s;
+        transition: all 0.5s ease-in 0.3s;
+    }
+
+    .nav-links li:nth-child(4){
+        transition: all 0.5s ease-in 0.4s;
     }
 
     li.fade{
