@@ -1,7 +1,7 @@
 function openLocation ( evt , place) {
 
-    console.log( evt );
-    console.log("click on ", place);
+   /* console.log( evt );
+    console.log("click on ", place);*/
     let i;
     const tabcontent = document.getElementsByClassName("tabcontent");
     const tablinks = document.getElementsByClassName("tablinks");
