@@ -163,6 +163,10 @@ footer{
 
 @media screen and (max-width: 450px) {
 
+    .me{
+        font-size: 4vh;
+    }
+
     .navbar{
         width: 100vw;
     }
