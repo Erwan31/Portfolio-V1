@@ -56,6 +56,9 @@ navLink();
 console.log('scrollmarker', scrollMarker);
 
 window.onscroll = function (){
+
+    window.scrollLeft = 0;
+
     //scrollStickiness();
     scrollStickyOrHidden();
     
@@ -105,7 +108,7 @@ function scrollStickyOrHidden() {
     //console.log(scrollH);
 
     // Origin padding
-    if( scrollH < 25 && window.innerWidth > 750){   //take into account responsiveness
+    if( scrollH < 25){   //take into account responsiveness
         nav.style.marginTop = '10px';
         nav.style.boxShadow = "0px 0px 0px #003C34";
     }

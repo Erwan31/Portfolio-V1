@@ -10,6 +10,13 @@
 html{
     scroll-behavior: smooth;
     width: 100%;
+    overflow-x: hidden;
+    background-color: #1D3C34; /* pantone 560 C */
+}
+
+body{
+  overflow-x: hidden;
+  background-color: #1D3C34; /* pantone 560 C */
 }
 
 ::-webkit-scrollbar {

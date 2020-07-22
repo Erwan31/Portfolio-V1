@@ -24,7 +24,6 @@
     max-width: 600px;
     height: 320px;
 
-    background-image: url(../images/capture-portfoliov1-mid.png);
     background-blend-mode: overlay;
     background-position: center;
     background-size: cover;
@@ -34,6 +33,10 @@
     margin-bottom: 86px;
     margin-left: 0;
     margin-right: -5vw;
+}
+
+#portfoliov1 .project-thumbnail-left{
+    background-image: url(../images/capture-portfoliov1-mid.png);
 }
 
 .project-presentation-left{
@@ -71,7 +74,6 @@
     max-width: 600px;
     height: 320px;
 
-    background-image: url(../images/figma-navbar.PNG);
     background-blend-mode: overlay;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
@@ -79,6 +81,10 @@
     margin-bottom: 86px;
     margin-right: 0;
     margin-left: -5vw;
+}
+
+#asteroids .project-thumbnail-right{
+    background-image: url(../images/asteroids.gif);
 }
 
 .project-presentation-right{
@@ -176,7 +182,7 @@
 }
 
 @media screen and (max-width: 725px){
-    .project-presentation-left{
+    #portfoliov1 .project-presentation-left{
         background-image: url(../images/capture-portfoliov1-mid.png);
         background-blend-mode: overlay;
         background-size: contain;
@@ -187,8 +193,8 @@
         display: none;
     }
 
-    .project-presentation-right{
-        background-image: url(../images/figma-navbar.PNG);
+    #asteroids .project-presentation-right{
+        background-image: url(../images/asteroids.gif);
         background-blend-mode: overlay;
         background-size: contain;
         color: white;
