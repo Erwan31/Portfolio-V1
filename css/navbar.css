@@ -179,8 +179,6 @@ footer{
         color: #006F62;
     }
 
-
-
     /* Burger Menu */
     .burger-menu{
         display: flex;
@@ -196,68 +194,6 @@ footer{
     }
     */
 
-    .hamburger{
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 50px;
-        height: 50px;
-        cursor: pointer;
-        right: 5%;
-        top: 50%;
-        transform: translate(-5%, -50%);
-        z-index: 2;
-        border: 3px solid white;
-    }
-
-    .hamburger .line{
-        width: 30px;
-        height: 3px;
-        background: white;
-        border-radius: 5px;
-        display: block;
-        transition: all 1s ease-out;
-    }
-
-    .hamburger .line::before,
-    .hamburger .line::after {
-        content: "";
-        position: absolute;
-        width: 30px;
-        height: 3px;
-        background: white;
-        border-radius: 5px;
-        display: block;
-        transition: all 1s ease-out;
-    }
-
-    .hamburger .line::before{
-        top: 12px;
-        
-    }
-
-    .hamburger .line::after{
-        bottom: 12px;
-        transition: all 1s ease-out;
-    }
-
-    .hamburger .line.active::before{
-        animation: burgerComplicated2 0.5s ease-out;
-        animation-fill-mode: forwards;
-    }
-
-    .hamburger .line.active{
-        transition: all 1s ease-out;
-        background: transparent;
-    }
-
-    .hamburger .line.active::after{
-        animation: burgerComplicated1 0.5s ease-out;
-        animation-fill-mode: forwards;
-    }
-
     .nav-links{
         position: fixed;
        /* background-color: #6BBBAE;*/
@@ -272,26 +208,6 @@ footer{
         pointer-events: none;
         z-index: 4;
         margin-top: 40px;
-    }
-
-    @keyframes burgerComplicated1 {
-        0%{
-            transform: rotate(0deg);
-        }
-    
-        100%{
-            transform: rotate(45deg) translate(-5px, -7px);
-        }
-    }
-
-    @keyframes burgerComplicated2 {
-        0%{
-            transform: rotate(0deg);
-        }
-    
-        100%{
-            transform: rotate(-45deg) translate(-5px, 7px);
-        }
     }
 
     .nav-links.open{

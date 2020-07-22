@@ -5,6 +5,7 @@
     font-family: 'Anonymous Pro', monospace;
     background-color: #1D3C34; /* pantone 560 C */
     color: white;
+    height:  auto;
 }
 
 html{
@@ -12,11 +13,13 @@ html{
     width: 100%;
     overflow-x: hidden;
     background-color: #1D3C34; /* pantone 560 C */
+    height:  auto;
 }
 
 body{
   overflow-x: hidden;
   background-color: #1D3C34; /* pantone 560 C */
+  height: auto;
 }
 
 ::-webkit-scrollbar {
