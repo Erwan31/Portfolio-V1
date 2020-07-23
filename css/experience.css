@@ -269,6 +269,7 @@
     width: 100%;
     max-width: 250px;
     height: 30%;
+    min-height: 100px;
 
     display: block;
     background-color: transparent;
@@ -468,6 +469,12 @@
   }
 
   @media screen and (max-width: 600px){
+
+    /* Style the buttons inside the tab */
+    .tab button {
+        min-height: auto;
+    }
+      
       .navtab-container{
         height: auto;
         grid-template-rows: minmax(15%, 70px) 2.2fr;
