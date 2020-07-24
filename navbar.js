@@ -47,7 +47,7 @@ function navLink () {
 
 function fadeLinks() {
     links.forEach( link => {
-        link.classList.toggle("fade");
+        link.classList.toggle("fadeLink");
     })
 }
 
