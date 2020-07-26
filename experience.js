@@ -1,3 +1,34 @@
+export function jobEduTab () {
+  const tab = document.getElementsByClassName('tab');
+
+  tab[0].addEventListener( 'click', (event) => {
+
+    let place = event.target.value;
+
+  /*  console.log( event );
+    console.log("click on ", place);*/
+
+    let i;
+    const tabcontent = document.getElementsByClassName("tabcontent");
+    const tablinks = document.getElementsByClassName("tablinks");
+
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(place).style.display = "block";
+    event.currentTarget.className += " active";
+
+  });
+}
+
+
+
+/*
 function openLocation ( evt , place) {
 
     console.log( evt );
@@ -17,7 +48,7 @@ function openLocation ( evt , place) {
     document.getElementById(place).style.display = "block";
     evt.currentTarget.className += " active";
 }
-
+*/
 /* 
 "use strict";
 

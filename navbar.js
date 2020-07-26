@@ -13,7 +13,14 @@ const burger = document.querySelector('.burger');
 const navLinksBurger = document.querySelector('.nav-links');
 const links = document.querySelectorAll('.nav-links li');
 const line = document.querySelector('.line');
+const nav = document.querySelector("nav");
+const body = document.querySelector("body");
+let stickyOffset = nav.offsetTop;
+let scrollTop = document.documentElement.scrollTop;
+let lastScrollTop = (nav.offsetHeight*2) + 'px';
 
+/* Detect click on the main tag for responsive burger menu */
+const main = document.querySelector('main');
 
 burger.addEventListener('click', (e) => {
     navLinksBurger.classList.toggle("open");
@@ -53,8 +60,6 @@ function fadeLinks() {
 
 navLink();
 
-console.log('scrollmarker', scrollMarker);
-
 window.onscroll = function (){
 
     window.scrollLeft = 0;
@@ -77,11 +82,6 @@ window.onscroll = function (){
     }
 }
 
-const nav = document.querySelector("nav");
-const body = document.querySelector("body");
-let stickyOffset = nav.offsetTop;
-let scrollTop = document.documentElement.scrollTop;
-let lastScrollTop = (nav.offsetHeight*2) + 'px';
 
 
 function scrollStickiness() {
@@ -130,8 +130,7 @@ function scrollStickyOrHidden() {
     lastScrollTop = scrollH <= 0 ? 0 : scrollH; // For Mobile or negative scrolling
 }
 
-/* Detect click on the main tag for responsive burger menu */
-const main = document.querySelector('main');
+
 
 main.addEventListener('click', () => {
     if( document.querySelector('.open') !== null ){

@@ -1,19 +1,20 @@
 "use strict";  
 
-let heightAbout = document.getElementById("about").offsetHeight;
-let heightExp = document.getElementById("experience").offsetHeight;
-let heightProjects = document.getElementById("projects").offsetHeight;
-let heightContact = document.getElementById("contact").offsetHeight;
+export function setScrollMagicInit(){
 
-// init controller
-let controller = new ScrollMagic.Controller();
+    let heightAbout = document.getElementById("about").offsetHeight;
+    let heightExp = document.getElementById("experience").offsetHeight;
+    let heightProjects = document.getElementById("projects").offsetHeight;
+    let heightContact = document.getElementById("contact").offsetHeight;
 
-//Scenes
-let sceneIntro, sceneIntro1, sceneAbout;
-let translateSquare, translateCircle, translateTriangle;
-let navAbout, navExperience, navProjects, navContact;
-  
-function setScrollMagicInit(){
+    // init controller
+    let controller = new ScrollMagic.Controller();
+
+    //Scenes
+    let sceneIntro, sceneIntro1, sceneAbout;
+    let translateSquare, translateCircle, translateTriangle;
+    let navAbout, navExperience, navProjects, navContact;
+    
 
     // create a scene
     sceneIntro = new ScrollMagic.Scene({
@@ -101,7 +102,8 @@ function setScrollMagicInit(){
     document.getElementById("defaultOpen").click();
 }
 
-setScrollMagicInit();
+// Declared and used inside index.js for webpack
+//setScrollMagicInit();
 
 /*
 function setScrollMagic(){

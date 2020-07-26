@@ -28,9 +28,6 @@
     <link rel="stylesheet" href="./css/projects.css">
     <link rel="stylesheet" href="./css/getmycv.css">
     <link rel="stylesheet" href="./css/burger.css">
-
-    <!-- Fisrt JS script, need to placed before body -->
-    <script src="experience.js"></script>
     
     <title>Erwan Spilmont | Frontend Developer</title>
 </head>
@@ -136,9 +133,12 @@
                         <div class="job-edu-title"><div>Jobs & Education</div></div>
                         <div class="navtab-container">
                                 <div class="tab">
-                                    <button class="tablinks" onclick="openLocation(event, 'researcher')" id="defaultOpen">INESC TEC</button>
+                           <!--        <button class="tablinks" onclick="openLocation(event, 'researcher')" id="defaultOpen">INESC TEC</button>
                                     <button class="tablinks" onclick="openLocation(event, 'student0')">FEUP</button>
-                                    <button class="tablinks" onclick="openLocation(event, 'student1')">ENSEA</button>
+                                    <button class="tablinks" onclick="openLocation(event, 'student1')">ENSEA</button>--> 
+                                    <button class="tablinks" value='researcher' id="defaultOpen">INESC TEC</button>
+                                    <button class="tablinks" value='student0'>FEUP</button>
+                                    <button class="tablinks" value='student1'>ENSEA</button>
                                 </div>  
 
                                   <!-- Tab panes -->
@@ -356,7 +356,12 @@
         </div>
         <p class="contact-designer">Designed & Built by Erwan Spilmont - 2020</p>
     </footer>
+
+
+    <!-- Fisrt JS script, need to placed before body 
+    <script src="experience.js"></script>-->
     <script src="navbar.js"></script>
-    <script src="scroll.js"></script>
+   <!-- <script src="scroll.js"></script> -->
+    <script src="./dist/main.js"></script>
 </body>
 </html>
