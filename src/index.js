@@ -2,6 +2,7 @@ import {setScrollMagicInit} from "../scroll.js"
 import { jobEduTab } from './../experience.js';
 import { navAll } from "../navbar.js";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import "../css/about.css";
 import "../css/burger.css";
