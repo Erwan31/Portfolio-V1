@@ -1,4 +1,5 @@
 export function jobEduTab () {
+  
   const tab = document.getElementsByClassName('tab');
 
   tab[0].addEventListener( 'click', (event) => {
