@@ -84,7 +84,7 @@
 }
 
 #asteroids .project-thumbnail-right{
-    background-image: url(../images/asteroids.gif);
+    background-image: url(../images/asteroids.png);
 }
 
 .project-presentation-right{
@@ -194,7 +194,7 @@
     }
 
     #asteroids .project-presentation-right{
-        background-image: url(../images/asteroids.gif);
+        background-image: url(../images/asteroids.png);
         background-blend-mode: overlay;
         background-size: contain;
         color: white;

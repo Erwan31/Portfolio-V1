@@ -1,5 +1,7 @@
 "use strict";  
 
+// import {ScrollMagic} from "./node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js";
+
 export function setScrollMagicInit(){
 
     let heightAbout = document.getElementById("about").offsetHeight;

@@ -177,7 +177,7 @@
     justify-content: space-evenly;
 }
 
-.line{
+.lineSkills{
     width: 1px;
     height: 350px;
     
@@ -458,7 +458,7 @@
           flex-direction: column;
       }
   
-      .line{
+      .lineSkills{
           transform: rotate(90deg);
           height: 30vh;
       }
