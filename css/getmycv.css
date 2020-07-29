@@ -1,5 +1,5 @@
-#resume_section{
-  width: 100vw;
+.resume_section{
+  width: 100%;
   align-items: center;
   justify-items: center;
   justify-content: center;
@@ -8,8 +8,8 @@
 
 
 .resume{
-  min-width: 300px;
-  height: 115px;
+  max-width: 450px;
+  height: 115px; 
   background-color: #6BBBAE;
 
   border: 5px solid #EEEEEE;
@@ -22,7 +22,9 @@
   justify-items: center;
   justify-content: center;
 
-  margin: 0;
+  margin: auto;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
 }
   
 .resume_content,
@@ -38,4 +40,7 @@
   background-color: #6BBBAE;
 
   color: #EEEEEE;
+
+  margin: 15px;
+
 }
