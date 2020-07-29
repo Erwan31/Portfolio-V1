@@ -25,6 +25,20 @@
   margin: auto;
   margin-top: 4vh;
   margin-bottom: 4vh;
+
+  transition-delay: 0.1s;
+  transition-duration: 0.3s;
+
+}
+
+.resume:focus{
+  display: none;
+}
+
+.resume:hover,
+.resume:active{
+  transform: scale(1.05);
+  text-decoration: none;
 }
   
 .resume_content,
@@ -42,5 +56,7 @@
   color: #EEEEEE;
 
   margin: 15px;
+
+  text-decoration: none;
 
 }

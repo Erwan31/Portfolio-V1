@@ -9,7 +9,7 @@ module.exports = {
     module: {
         rules: [
             { test: /\.css$/, use: ['style-loader', 'css-loader'] },
-            { test: /\.(png|jpg|gif)$/i, loader: 'url-loader'},
+            { test: /\.(pdf|png|jpg|gif)$/i, loader: 'url-loader'},
         ]
     },
     plugins: [new HtmlWebpackPlugin({
