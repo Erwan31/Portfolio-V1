@@ -8,6 +8,7 @@ export function setScrollMagicInit(){
     let heightExp = document.getElementById("experience").offsetHeight;
     let heightProjects = document.getElementById("projects").offsetHeight;
     let heightContact = document.getElementById("contact").offsetHeight;
+    let heightResume = document.getElementById("resume_section").offsetHeight;
 
     // init controller
     let controller = new ScrollMagic.Controller();
@@ -81,9 +82,10 @@ export function setScrollMagicInit(){
                     .addTo(controller);
 
 
+    let navProjectsDuration = (heightProjects + heightResume ); //- heightContact
     navProjects = new ScrollMagic.Scene({
                     triggerElement: "#projects",
-                    duration: heightProjects-2*heightContact, // hide 10% before exiting view (80% + 10% from bottom)
+                    duration: navProjectsDuration, // hide 10% before exiting view (80% + 10% from bottom)
                     })
                     .setClassToggle("#projectsLink", "activeNavLink") // add class toggle
                     .addTo(controller);

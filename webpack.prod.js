@@ -1,7 +1,9 @@
 const path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const common = require("./webpack.common");
+const merge = require("webpack-merge");
 
-module.exports = {
+module.exports = merge( common,{
+    mode: "production",
     output: {
         filename: "main.[contentHash].js",
         path: path.resolve(__dirname, 'dist'),
@@ -12,7 +14,4 @@ module.exports = {
             { test: /\.(pdf|png|jpg|gif)$/i, loader: 'url-loader'},
         ]
     },
-    plugins: [new HtmlWebpackPlugin({
-        template: "./src/template.html"
-    })],
-};
+});
