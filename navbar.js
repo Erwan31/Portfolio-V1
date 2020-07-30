@@ -12,7 +12,7 @@ const scrollMarker = document.querySelector(".demo a");
 const burger = document.querySelector('.burger');
 const navLinksBurger = document.querySelector('.nav-links');
 const links = document.querySelectorAll('.nav-links li');
-const line = document.querySelector('.line');
+const line = document.querySelector('.burger-lines');
 
 
 burger.addEventListener('click', (e) => {

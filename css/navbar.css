@@ -154,6 +154,18 @@ footer{
     display: none;
 }
 
+#resumeLink{
+    color: #6BBBAE;
+    border: 3px solid #6BBBAE;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+#resumeLink a{
+    color: #6BBBAE;
+    margin: 15px;
+}
+
 @media screen and (max-width: 700px) {
     .nav-item{
         font-size: 10px;
@@ -201,7 +213,7 @@ footer{
     .nav-links{
         position: fixed;
        /* background-color: #6BBBAE;*/
-        height: 120vh;
+        height: 115vh;
         padding-bottom: 25vh;
         width: 50%;
         flex-direction: column;
@@ -212,6 +224,7 @@ footer{
         pointer-events: none;
         z-index: 4;
         margin-top: 40px;
+        margin-right: -20px;
     }
 
     .nav-links.open{
@@ -228,10 +241,6 @@ footer{
         opacity: 0;
     }
 
-    .nav-links li a {
-        font-size: 25px;
-    }
-
     .nav-links li:nth-child(1){
         transition: all 0.5s ease-in 0.1s;
     }
@@ -246,6 +255,10 @@ footer{
 
     .nav-links li:nth-child(4){
         transition: all 0.5s ease-in 0.4s;
+    }
+
+    .nav-links li:nth-child(5){
+        transition: all 0.5s ease-in 0.6s;
     }
 
     li.fadeLink{
@@ -286,4 +299,4 @@ footer{
     }
     */
 }
-
+ 
