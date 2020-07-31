@@ -54,7 +54,7 @@
                 <li id="experienceLink"><a class="nav-link" href="#experience">Experience</a></li>
                 <li id="projectsLink"><a class="nav-link" href="#projects">Projects</a></li>
                 <li id="contactLink"><a class="nav-link" href="#contact">Contact</a></li>
-                <li id="resumeLink"><a href="./images/CV_Erwan_SPILMONT_dev_eng_0720.pdf" >Resume</a></li>
+                <li id="resumeLink"><a href="./images/CV_Erwan_SPILMONT_dev_eng_0720.pdf" download="CV_Erwan_Spilmont.pdf">Resume</a></li>
             </ul>
         </div>
     </nav>
@@ -343,16 +343,13 @@
                 </div>
             </div>
         </section>
-
-        <section class="getmycv">
-            <section class="resume_section" id="resume_section">
-                <a class="resume" href="./images/CV_Erwan_SPILMONT_dev_eng_0720.pdf" >
-                    <div class="resume_content">
+        <section id="resume_section">
+                <a class="resume" href="./images/CV_Erwan_SPILMONT_dev_eng_0720.pdf" target="_blank" rel="nofollow noopener noreferrer">
+                    <span class="resume_content">
                         <img src="./images/resume.svg" alt="Resume"> Download Resume
-                    </div>
+                    </span>
                 </a>
-            </section>
-        </section>
+         </section>
     </main>
 
     <footer id="contact" class="contact">
@@ -363,7 +360,22 @@
         </div>
         <p class="contact-designer">Designed & Built by Erwan Spilmont - 2020</p>
     </footer>
+    <!--<script>
+        function openfile() { 
+            window.location.assign(
+                "./images/CV_Erwan_SPILMONT_dev_eng_0720.pdf",// <- This is what makes it open in a new window.
+            );
+            console.log('open');
+        }
+
+        document.getElementById('resume_section').addEventListener('click', (e) =>  {
+            e.stopPropagation();
+            
+            console.log('click on resume'); 
+            openfile();
+        })
+    </script>-->
     <script src="navbar.js"></script>
-    <script src="scroll.js"></script>
+    <script src="scroll.js"></script> 
 </body>
 </html>

@@ -1,9 +1,5 @@
-.getmycv{
-    width: 100%;
-    height: 150px;
-}
 
-.resume_section{
+#resume_section{
   width: 100%;
   align-items: center;
   justify-items: center;
@@ -38,10 +34,6 @@
 
 }
 
-.resume:focus{
-  display: none;
-}
-
 .resume:hover,
 .resume:active{
   transform: scale(1.05);
@@ -65,5 +57,17 @@
   margin: 15px;
 
   text-decoration: none;
+}
 
+
+@media screen and (max-width: 450px){
+
+  .resume{
+    transition: none;
+  }
+
+  .resume:hover,
+  .resume:active{
+    transform: none;
+  }
 }
