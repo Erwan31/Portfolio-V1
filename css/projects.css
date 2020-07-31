@@ -1,12 +1,12 @@
 
 .projects{
     width: 100%;
-    height: 1600px;
+    height: auto;
 }
 
 .project-container{
     width: 100%;
-    height: 25%;
+    height: 33%;
 
     display: flex;
     align-items: center;
@@ -69,6 +69,11 @@
     background-color: transparent;
 }
 
+.project-name:hover{
+    text-decoration: none;
+    color: #6BBBAE;
+}
+
 .project-thumbnail-right{
     width: 40vw;
     max-width: 600px;
@@ -84,7 +89,8 @@
 }
 
 #asteroids .project-thumbnail-right{
-    background-image: url(../images/asteroids.gif);
+    background-blend-mode: overlay;
+    background-image: url(../images/asteroids.PNG);
 }
 
 .project-presentation-right{
@@ -103,7 +109,7 @@
 .project-tools{
     display: flex;
     justify-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: transparent;
     flex-direction: row;
 }
@@ -194,7 +200,7 @@
     }
 
     #asteroids .project-presentation-right{
-        background-image: url(../images/asteroids.gif);
+        background-image: url(../images/asteroids.png);
         background-blend-mode: overlay;
         background-size: contain;
         color: white;
@@ -232,5 +238,6 @@
     .project-tools{
         justify-content: stretch;
         height: auto;
+        overflow: auto;
     }
 }
