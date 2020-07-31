@@ -142,6 +142,10 @@
 
 }
 
+.skills-item:hover{
+    cursor: pointer;
+}
+
 .skills-item img{
     background: transparent;
     justify-content: center;
