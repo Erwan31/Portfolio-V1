@@ -102,7 +102,7 @@
 
 .demo{
     width: 90px;
-    height: 534px;
+    height: 100%;
 }
 
 .demo a {
@@ -118,9 +118,9 @@
     transition: opacity .3s;
 }
 
-  .demo a:hover {
+.demo a:hover {
     opacity: .5;
-  }
+}
 
 
 #section05 a {
@@ -142,6 +142,12 @@
     -webkit-animation: sdb05 3s infinite;
     animation: sdb05 3s infinite;
     box-sizing: border-box;
+}
+
+#section05 div{
+    -webkit-animation: opacity 6s infinite;
+    animation: opacity 6s infinite ease-in;
+    color: #6BBBAE;
 }
 
 @-webkit-keyframes sdb05 {
@@ -170,12 +176,6 @@
         transform: rotate(-45deg) translate(-20px, 20px);
         opacity: 0;
     }
-}
-
-#section05 div{
-    -webkit-animation: opacity 6s infinite;
-    animation: opacity 6s infinite ease-in;
-    color: #6BBBAE;
 }
 
 @keyframes opacity{
@@ -229,7 +229,7 @@
 @media screen and (max-width: 750px){
 
     #section05{
-       top: 500px; 
+       top: 90vh; 
     }
 
     .intro{

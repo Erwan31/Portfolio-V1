@@ -191,8 +191,13 @@ footer{
         background: transparent;
     }
 
-    .activeNavLink .nav-link{
-        color: #006F62;
+    .nav-links li a.active{
+        color: #6BBBAE;
+    }
+
+    .nav-links li a:hover:not(.active){
+        color: #6BBBAE;
+        text-decoration: none;
     }
 
     /* Burger Menu */

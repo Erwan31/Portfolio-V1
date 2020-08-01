@@ -142,10 +142,6 @@
 
 }
 
-.skills-item:hover{
-    cursor: pointer;
-}
-
 .skills-item img{
     background: transparent;
     justify-content: center;
@@ -181,7 +177,7 @@
     justify-content: space-evenly;
 }
 
-.lineSkills{
+.line{
     width: 1px;
     height: 350px;
     
@@ -462,7 +458,7 @@
           flex-direction: column;
       }
   
-      .lineSkills{
+      .line{
           transform: rotate(90deg);
           height: 30vh;
       }
