@@ -301,7 +301,7 @@
 
     .portrait-container{
         transform: scale(0.7);
-        margin-left: -50px;
+        margin-left: 10vw;
     }
 
     .about-bold{
@@ -326,7 +326,6 @@
 
     .portrait-container{
         transform: scale(0.5);
-        margin-left: 0px;
         margin-top: 15px;
         margin-bottom: 0px; 
     }
