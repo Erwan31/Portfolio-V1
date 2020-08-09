@@ -8,6 +8,7 @@ function openLocation ( evt , place) {
 
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
+      tabcontent[i].style.opacity = "0";
     }
     
     for (i = 0; i < tablinks.length; i++) {
@@ -15,6 +16,7 @@ function openLocation ( evt , place) {
     }
 
     document.getElementById(place).style.display = "block";
+    document.getElementById(place).style.opacity = "1";
     evt.currentTarget.className += " active";
 }
 

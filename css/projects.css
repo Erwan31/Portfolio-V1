@@ -37,13 +37,15 @@
 
 #portfoliov1 .project-thumbnail-left{
     background-image: url(../images/capture-portfoliov1-mid.png);
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
 }
 
 .project-presentation-left{
  /*   width: 445px;
     height: 250px;*/
     max-width: 445px;
-    display: block;
+    display: block; 
 
     background: #EEEEEE;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -91,6 +93,8 @@
 #asteroids .project-thumbnail-right{
     background-blend-mode: overlay;
     background-image: url(../images/asteroids.PNG);
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
 }
 
 .project-presentation-right{
@@ -191,7 +195,7 @@
     #portfoliov1 .project-presentation-left{
         background-image: url(../images/capture-portfoliov1-mid.png);
         background-blend-mode: overlay;
-        background-size: contain;
+        background-size: cover;
         color: white;
     }
 
@@ -202,7 +206,7 @@
     #asteroids .project-presentation-right{
         background-image: url(../images/asteroids.png);
         background-blend-mode: overlay;
-        background-size: contain;
+        background-size: cover;
         color: white;
     }
 
