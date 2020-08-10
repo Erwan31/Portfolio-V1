@@ -47,7 +47,7 @@
     max-width: 445px;
     display: block; 
 
-    background: #EEEEEE;
+    background: var(--whitish);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
 
@@ -66,14 +66,14 @@
     display: flex;
     align-items: center;
 
-    color: #6BBBAE;
+    color: var(--sec-bg-color);
 
     background-color: transparent;
 }
 
 .project-name:hover{
     text-decoration: none;
-    color: #6BBBAE;
+    color: var(--sec-bg-color);
 }
 
 .project-thumbnail-right{
@@ -101,7 +101,7 @@
     max-width: 445px;
     display: block;
 
-    background: #EEEEEE;
+    background: var(--whitish);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
 
@@ -131,7 +131,7 @@
     display: flex;
     align-items: center;
 
-    color: #000000;
+    color: black;
 
     background-color: transparent;
 
@@ -142,7 +142,7 @@
 
 .project-tool{
     list-style: none;
-    color: #6BBBAE;
+    color: var(--sec-bg-color);
     background-color: transparent;
     margin: 1vw;
 }
@@ -196,7 +196,7 @@
         background-image: url(../images/capture-portfoliov1-mid.png);
         background-blend-mode: overlay;
         background-size: cover;
-        color: white;
+        color: var(--whitish);
     }
 
     .project-thumbnail-left{
@@ -207,7 +207,7 @@
         background-image: url(../images/asteroids.png);
         background-blend-mode: overlay;
         background-size: cover;
-        color: white;
+        color: var(--whitish);
     }
 
     .project-thumbnail-right{

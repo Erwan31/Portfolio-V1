@@ -1,6 +1,6 @@
 .contact{
     height: 125px;
-    background: #006F62;
+    background: var(--tab-hov-color);
 
     display: flex;
     align-items: center;
@@ -40,7 +40,7 @@
 
     text-align: center;
 
-    color: #EEEEEE;
+    color: var(--whitish);
 
     margin: 10px 0px;
 }
@@ -48,8 +48,8 @@
 .contact-link{
     border-radius: 50%;
 
-    box-shadow: inset 0px 0px 0px #1D3C34,
-                0px 0px 0px #1D3C34;
+    box-shadow: inset 0px 0px 0px var(--main-bg-color),
+                0px 0px 0px var(--main-bg-color);
     transition: 0.3s;
 
     margin: 0em 0.5em;
@@ -58,8 +58,8 @@
 
 .contact-link:hover{
     transform: translateY(-5px);
-    box-shadow: inset -1px -1px 2px #1D3C34,
-    2px 2px 5px #1D3C34;
+    box-shadow: inset -1px -1px 2px var(--main-bg-color),
+    2px 2px 5px var(--main-bg-color);
 }
 
 
@@ -81,8 +81,8 @@
 
     .contact-link:hover{
         transform: translateY(0px) scale(0.7);
-        box-shadow: inset -1px -1px 2px #1D3C34,
-        2px 2px 5px #1D3C34;
+        box-shadow: inset -1px -1px 2px var(--main-bg-color),
+        2px 2px 5px var(--main-bg-color);
     }
 
     .contact-designer{
@@ -97,7 +97,7 @@
     
         text-align: center;
     
-        color: #EEEEEE;
+        color: var(--whitish);
     
         margin: 5px 0px;
     }

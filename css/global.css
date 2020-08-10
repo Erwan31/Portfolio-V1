@@ -1,9 +1,28 @@
+:root{
+  --main-bg-color: #005844; /* PANTONE 7729 C */
+  --sec-bg-color: #47D7AC; /* PANTONE 3385 C */
+  --whitish: #EEEEEE;
+  --tab-bg-color: #00664F;  /* 336 C */
+  --tab-hov-color: #007B5F;
+}
+
+
+/*
+:root{
+  --main-bg-color: #1D3C34;
+  --sec-bg-color: #6BBBAE;
+  --whitish: #EEEEEE;
+  --tab-bg-color: #00594C;  
+  --tab-hov-color: #006F62;
+}
+*/
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Anonymous Pro', monospace;
-    background-color: #1D3C34; /* pantone 560 C */
+    background-color: var(--main-bg-color); /* pantone 560 C */
     color: white;
     height:  auto;
 }
@@ -12,13 +31,13 @@ html{
     scroll-behavior: smooth;
     width: 100%;
     overflow-x: hidden;
-    background-color: #1D3C34; /* pantone 560 C */
+    background-color: var(--main-bg-color); /* pantone 560 C */
     height:  auto;
 }
 
 body{
   overflow-x: hidden;
-  background-color: #1D3C34; /* pantone 560 C */
+  background-color: var(--main-bg-color); /* pantone 560 C */
   height: auto;
 }
 

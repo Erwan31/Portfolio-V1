@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color: #6BBBAE;
+    color: var(--sec-bg-color);
 }
 
 .introname{
@@ -33,7 +33,7 @@
     align-items: center;
     text-align: center;
 
-    color: #EEEEEE;
+    color: var(--whitish);
 }
 
 .introtext{
@@ -52,7 +52,7 @@
     align-items: center;
     text-align: center;
 
-    color: #FFFFFF;
+    color: var(--whitish);
 }
 
 .introp2{
@@ -68,7 +68,7 @@
     display: flex;
     align-items: center;
 
-    color: #6BBBAE;
+    color: var(--sec-bg-color);
 }
 
 /*
@@ -113,7 +113,7 @@
     display: inline-block;
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
-    color: #6BBBAE;
+    color: var(--sec-bg-color);
     text-decoration: none;
     transition: opacity .3s;
 }
@@ -134,8 +134,8 @@
     width: 24px;
     height: 24px;
     margin-left: -12px;
-    border-left: 1px solid #6BBBAE;
-    border-bottom: 1px solid #6BBBAE;
+    border-left: 1px solid var(--sec-bg-color);
+    border-bottom: 1px solid var(--sec-bg-color);
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     animation-delay: 2s;
@@ -147,7 +147,7 @@
 #section05 div{
     -webkit-animation: opacity 6s infinite;
     animation: opacity 6s infinite ease-in;
-    color: #6BBBAE;
+    color: var(--sec-bg-color);
 }
 
 @-webkit-keyframes sdb05 {

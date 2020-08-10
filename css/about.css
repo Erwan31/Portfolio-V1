@@ -22,7 +22,7 @@
     align-items: center;
     text-align: center;
 
-    color: #EEEEEE;
+    color: var(--whitish);
 }
 
 .about-bold{
@@ -37,11 +37,11 @@
     font-size: 45px;
     line-height: 47px;
 
-    color: #EEEEEE;
+    color: var(--whitish);
 }
 
 .about-bold-colorized{
-    color: #6BBBAE;
+    color: var(--sec-bg-color);
 }
 
 .about-portrait{
@@ -60,7 +60,7 @@
     font-size: 20px;
     line-height: 20px;
 
-    color: #EEEEEE;
+    color: var(--whitish);
 
 }
 
@@ -91,7 +91,7 @@
     left: 122px;
     top: 12px;
 
-    background: #6BBBAE;
+    background: var(--sec-bg-color);
     border-radius: 5px;
 }
 
@@ -103,7 +103,7 @@
     left: 334px;
     top: 203px;
 
-    /*background: #EEEEEE;*/
+    /*background: var(--whitish);*/
 }
 
 

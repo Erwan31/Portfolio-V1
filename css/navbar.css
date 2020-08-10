@@ -4,7 +4,7 @@ nav{
     align-items: center;
     height: 75px;
     width: 100%;
-    background-color: #1D3C34; /* pantone 560 C */
+    background-color: var(--main-bg-color); /* pantone 560 C */
     margin-top: 10px;
     z-index: 3;
 }
@@ -64,7 +64,7 @@ main{
 }
 
 .nav-item li:hover:not(.activeNavLink){
-    background-color: #6BBBAE;
+    background-color: var(--sec-bg-color);
     text-decoration: none;
 }
 
@@ -109,7 +109,7 @@ footer{
 }
 
 .activeNavLink{
-    background: #006F62;
+    background: var(--tab-hov-color);
 }
 
 /* Burger Menu */
@@ -125,7 +125,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     margin-left: auto;
-    background-color: #1D3C34; /* pantone 560 C */
+    background-color: var(--main-bg-color); /* pantone 560 C */
 }
 
 .nav-links li a{
@@ -143,7 +143,7 @@ footer{
 
 .landing h1{
     margin: 100px;
-    color: #6BBBAE;
+    color: var(--sec-bg-color);
     font-size: 50px;
 }
 
@@ -156,8 +156,8 @@ footer{
 
 #resumeLink{
     height: 50px;
-    color: #6BBBAE;
-    border: 3px solid #6BBBAE;
+    color: var(--sec-bg-color);
+    border: 3px solid var(--sec-bg-color);
     box-sizing: border-box;
     border-radius: 10px;
     margin-bottom: 25px;
@@ -168,7 +168,7 @@ footer{
 }
 
 #resumeLink a{
-    color: #6BBBAE;
+    color: var(--sec-bg-color);
     margin: 25px 25px;
 
 }
@@ -199,11 +199,11 @@ footer{
     }
 
     .nav-links li a.active{
-        color: #6BBBAE;
+        color: var(--sec-bg-color);
     }
 
     .nav-links li a:hover:not(.active){
-        color: #6BBBAE;
+        color: var(--sec-bg-color);
         text-decoration: none;
     }
 
@@ -211,7 +211,7 @@ footer{
     .burger-menu{
         display: flex;
         justify-content: flex-end;
-        background-color: #1D3C34; /* pantone 560 C */
+        background-color: var(--main-bg-color); /* pantone 560 C */
         position: absolute;
         right: 3vw;
     }
@@ -224,7 +224,7 @@ footer{
 
     .nav-links{
         position: fixed;
-       /* background-color: #6BBBAE;*/
+       /* background-color: var(--sec-bg-color);*/
         height: 115vh;
         padding-bottom: 25vh;
         width: 50%;
