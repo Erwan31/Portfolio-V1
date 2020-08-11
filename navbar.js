@@ -20,14 +20,14 @@ burger.addEventListener('click', (e) => {
     burger.classList.toggle("open");
     links.forEach( link => {
         if( e.target === link){
-            console.log('click on target');
+            //console.log('click on target');
         }
       //  link.classList.add("fade");
     });
     fadeLinks();
     line.classList.toggle('active');
 
-    console.log('click');
+    //console.log('click');
 });
 
 /* Selection nav link active state */
@@ -36,7 +36,7 @@ function navLink () {
     links.forEach( link => {
         link.addEventListener('click', () => {
             /*link.classList.add("active");*/
-            console.log('click link');
+            //console.log('click link');
             navLinksBurger.classList.remove("open");
             burger.classList.remove("open");
             line.classList.toggle('active');
@@ -53,7 +53,7 @@ function fadeLinks() {
 
 navLink();
 
-console.log('scrollmarker', scrollMarker);
+//console.log('scrollmarker', scrollMarker);
 
 window.onscroll = function (){
 
