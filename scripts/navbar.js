@@ -1,5 +1,7 @@
 "use strict";
 
+
+// Declaration of the DOM variables 
 const navItem = document.querySelector(".nav-item");
 const navLinks = document.querySelectorAll(".nav-link");
 let activeLink = undefined;
@@ -15,28 +17,22 @@ const links = document.querySelectorAll('.nav-links li');
 const line = document.querySelector('.burger-lines');
 
 
+////////////////////////////
+// Responsive Burger Menu //
+////////////////////////////
+
+// Trigger burger opening and fading of the links
 burger.addEventListener('click', (e) => {
     navLinksBurger.classList.toggle("open");
     burger.classList.toggle("open");
-    links.forEach( link => {
-        if( e.target === link){
-            //console.log('click on target');
-        }
-      //  link.classList.add("fade");
-    });
     fadeLinks();
     line.classList.toggle('active');
-
-    //console.log('click');
 });
 
-/* Selection nav link active state */
-
+/* Selection nav link to scroll to and close the burger */
 function navLink () {
     links.forEach( link => {
         link.addEventListener('click', () => {
-            /*link.classList.add("active");*/
-            //console.log('click link');
             navLinksBurger.classList.remove("open");
             burger.classList.remove("open");
             line.classList.toggle('active');
@@ -45,23 +41,26 @@ function navLink () {
     });
 }
 
+// Make the links fade in or away
 function fadeLinks() {
     links.forEach( link => {
         link.classList.toggle("fadeLink");
     })
 }
 
+// Call the function
 navLink();
 
-//console.log('scrollmarker', scrollMarker);
 
+// Listen to scroll for the sticky navbar
 window.onscroll = function (){
 
     window.scrollLeft = 0;
 
-    //scrollStickiness();
+    // See if the navbar should be sticked to top or dissapear
     scrollStickyOrHidden();
     
+    // After few pixel scroll, hide scroll markers
     if( window.pageYOffset > 200){
         scrollMarker.style.display = 'none';
     }
@@ -73,9 +72,25 @@ window.onscroll = function (){
         burger.classList.remove("open");
         line.classList.toggle('active');
         fadeLinks();
-        // console.log('click on main');
     }
 }
+
+/* Detect click on the main tag for responsive burger menu */
+const main = document.querySelector('main');
+
+main.addEventListener('click', () => {
+    if( document.querySelector('.open') !== null ){
+        navLinksBurger.classList.remove("open");
+        burger.classList.remove("open");
+        line.classList.toggle('active');
+        fadeLinks();
+    }
+}
+);
+
+///////////////////////////
+// Non-responsive Navbar //
+///////////////////////////
 
 const nav = document.querySelector("nav");
 const body = document.querySelector("body");
@@ -83,7 +98,8 @@ let stickyOffset = nav.offsetTop;
 let scrollTop = document.documentElement.scrollTop;
 let lastScrollTop = (nav.offsetHeight*2) + 'px';
 
-
+// Decide of the stickiness of the navbar based on the last scroll position
+// If scroll down, no stickyness, if scroll up stickyes
 function scrollStickiness() {
     if(window.pageYOffset >= stickyOffset){
         nav.classList.add("sticky");
@@ -93,21 +109,11 @@ function scrollStickiness() {
     }
 }
 
+// Style of the navbar depending on the scroll direction and position on the page
 function scrollStickyOrHidden() {
-    /*if( scrollTop) {
-        nav.classList.add("fixed-top");
-        body.style.paddingTop = nav.offsetHeight + 'px';
-        console.log('innerH: ', nav.offsetHeight);
-    }
-    else{
-        nav.classList.remove("fixed-top");
-        body.style.paddingTop = 0;
-    }*/
-
     let scrollH = window.pageYOffset;
-    //console.log(scrollH);
 
-    // Origin padding
+    // Origin padding & shadow display
     if( scrollH < 25){   //take into account responsiveness
         nav.style.marginTop = '10px';
         nav.style.boxShadow = "0px 0px 0px #003C34";
@@ -129,17 +135,3 @@ function scrollStickyOrHidden() {
     }
     lastScrollTop = scrollH <= 0 ? 0 : scrollH; // For Mobile or negative scrolling
 }
-
-/* Detect click on the main tag for responsive burger menu */
-const main = document.querySelector('main');
-
-main.addEventListener('click', () => {
-    if( document.querySelector('.open') !== null ){
-        navLinksBurger.classList.remove("open");
-        burger.classList.remove("open");
-        line.classList.toggle('active');
-        fadeLinks();
-        // console.log('click on main');
-    }
-}
-);

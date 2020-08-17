@@ -15,6 +15,8 @@ let navAbout, navExperience, navProjects, navContact;
   
 function setScrollMagicInit(){
 
+    // Manage the scrolling & highlighting of the navlinks in between sections when selected from the navbar
+
     // create a scene
     sceneIntro = new ScrollMagic.Scene({
         duration: 200, // the scene should last for a scroll distance of 100px
@@ -103,43 +105,4 @@ function setScrollMagicInit(){
 
 setScrollMagicInit();
 
-/*
-function setScrollMagic(){
-
-    navExperience = ScrollMagic.Scene({
-                    triggerElement: "#experience",
-                    duration: heightExp, // hide 10% before exiting view (80% + 10% from bottom)
-                    })
-                    .setClassToggle("#experienceLink", "activeNavLink") // add class toggle
-                    .addTo(controller);
-
-
-    navProjects = ScrollMagic.Scene({
-                    triggerElement: "#projects",
-                    duration: heightProjects, // hide 10% before exiting view (80% + 10% from bottom)
-                    })
-                    .setClassToggle("#projectsLink", "activeNavLink") // add class toggle
-                    .addTo(controller);
-
-    
-    navContact = new ScrollMagic.Scene({
-                    triggerElement: "#contact",
-                    triggerHook: 100,
-                    })
-                    .setClassToggle("#contactLink", "activeNavLink") // add class toggle
-                    .addTo(controller);
-}
-*/
-
-/*
-window.onresize = function () {
-    console.log('size document changed');
-    heightAbout = document.getElementById("about").offsetHeight;
-    heightExp = document.getElementById("experience").offsetHeight;
-    heightProjects = document.getElementById("projects").offsetHeight;
-    heightContact = document.getElementById("contact").offsetHeight;
-
-    setScrollMagic();
-}
-*/
  
