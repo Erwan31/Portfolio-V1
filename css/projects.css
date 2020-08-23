@@ -41,6 +41,12 @@
     background-size: cover!important;
 }
 
+#vidly .project-thumbnail-left{
+    background-image: url(../images/vidly.PNG);
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+}
+
 .project-presentation-left{
  /*   width: 445px;
     height: 250px;*/
