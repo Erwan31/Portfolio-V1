@@ -11,7 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Anonymous Pro', monospace;
-    background-color: var(--main-bg-color); /* pantone 560 C */
+    background-color: var(--main-bg-color);
     color: white;
     height:  auto;
 }
@@ -20,7 +20,7 @@ html{
     scroll-behavior: smooth;
     width: 100%;
     overflow-x: hidden;
-    background-color: var(--main-bg-color); /* pantone 560 C */
+    background-color: var(--main-bg-color);
     height:  auto;
 }
 

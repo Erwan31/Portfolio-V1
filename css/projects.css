@@ -96,6 +96,13 @@
     margin-left: -5vw;
 }
 
+#playlits .project-thumbnail-right{
+    background-blend-mode: overlay;
+    background-image: url(../images/playlits2.PNG);
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+}
+
 #asteroids .project-thumbnail-right{
     background-blend-mode: overlay;
     background-image: url(../images/asteroids.PNG);
@@ -205,8 +212,22 @@
         color: var(--whitish);
     }
 
+    #vidly .project-presentation-left{
+        background-image: url(../images/vidly.PNG);
+        background-blend-mode: overlay;
+        background-size: cover;
+        color: var(--whitish);
+    }
+
     .project-thumbnail-left{
         display: none;
+    }
+
+    #playlits .project-presentation-right{
+        background-image: url(../images/playlits2.PNG);
+        background-blend-mode: overlay;
+        background-size: cover;
+        color: var(--whitish);
     }
 
     #asteroids .project-presentation-right{
