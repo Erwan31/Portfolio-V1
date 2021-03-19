@@ -1,188 +1,191 @@
-
-.projects{
-    width: 100%;
-    height: auto;
+.projects {
+  width: 100%;
+  height: auto;
 }
 
-.project-container{
-    width: 100%;
-    height: 33%;
+.project-container {
+  width: 100%;
+  height: 33%;
 
-    display: flex;
-    align-items: center;
-    justify-items: center;   
+  display: flex;
+  align-items: center;
+  justify-items: center;
 
-    justify-content: center;
+  justify-content: center;
 
-    background: transparent;
+  background: transparent;
 
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
-.project-thumbnail-left{
-    width: 40vw;
-    max-width: 600px;
-    height: 320px;
+.project-thumbnail-left {
+  width: 40vw;
+  max-width: 600px;
+  height: 320px;
 
-    background-blend-mode: overlay;
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-    margin-top: 86px;
-    margin-bottom: 86px;
-    margin-left: 0;
-    margin-right: -5vw;
+  margin-top: 86px;
+  margin-bottom: 86px;
+  margin-left: 0;
+  margin-right: -5vw;
 }
 
-#portfoliov1 .project-thumbnail-left{
-    background-image: url(../images/capture-portfoliov1-mid.png);
-    background-repeat: no-repeat!important;
-    background-size: cover!important;
+#playlitsV2 .project-thumbnail-left {
+  background-image: url(../images/playlitsv2.png);
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
-#vidly .project-thumbnail-left{
-    background-image: url(../images/vidly.PNG);
-    background-repeat: no-repeat!important;
-    background-size: cover!important;
+#portfoliov1 .project-thumbnail-left {
+  background-image: url(../images/capture-portfoliov1-mid.png);
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
-.project-presentation-left{
- /*   width: 445px;
+#vidly .project-thumbnail-left {
+  background-image: url(../images/vidly.PNG);
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.project-presentation-left {
+  /*   width: 445px;
     height: 250px;*/
-    max-width: 445px;
-    display: block; 
+  max-width: 445px;
+  display: block;
 
-    background: var(--whitish);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+  background: var(--whitish);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
 
-    padding: 30px;
+  padding: 30px;
 }
 
-.project-name{
-    width: 183px;
-    height: 36px;
+.project-name {
+  width: 183px;
+  height: 36px;
 
-    font-family: Anonymous Pro;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 25px;
-    display: flex;
-    align-items: center;
+  font-family: Anonymous Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
 
-    color: var(--sec-bg-color);
+  color: var(--sec-bg-color);
 
-    background-color: transparent;
+  background-color: transparent;
 }
 
-.project-name:hover{
-    text-decoration: none;
-    color: var(--sec-bg-color);
+.project-name:hover {
+  text-decoration: none;
+  color: var(--sec-bg-color);
 }
 
-.project-thumbnail-right{
-    width: 40vw;
-    max-width: 600px;
-    height: 320px;
+.project-thumbnail-right {
+  width: 40vw;
+  max-width: 600px;
+  height: 320px;
 
-    background-blend-mode: overlay;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-blend-mode: overlay;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-    margin-top: 86px;
-    margin-bottom: 86px;
-    margin-right: 0;
-    margin-left: -5vw;
+  margin-top: 86px;
+  margin-bottom: 86px;
+  margin-right: 0;
+  margin-left: -5vw;
 }
 
-#playlits .project-thumbnail-right{
-    background-blend-mode: overlay;
-    background-image: url(../images/playlits2.PNG);
-    background-repeat: no-repeat!important;
-    background-size: cover!important;
+#playlits .project-thumbnail-right {
+  background-blend-mode: overlay;
+  background-image: url(../images/playlits2.PNG);
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
-#asteroids .project-thumbnail-right{
-    background-blend-mode: overlay;
-    background-image: url(../images/asteroids.PNG);
-    background-repeat: no-repeat!important;
-    background-size: cover!important;
+#asteroids .project-thumbnail-right {
+  background-blend-mode: overlay;
+  background-image: url(../images/asteroids.PNG);
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
-.project-presentation-right{
-    max-width: 445px;
-    display: block;
+.project-presentation-right {
+  max-width: 445px;
+  display: block;
 
-    background: var(--whitish);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+  background: var(--whitish);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
 
-    padding: 30px;
+  padding: 30px;
 
-    z-index: 2;
+  z-index: 2;
 }
 
-.project-tools{
-    display: flex;
-    justify-items: center;
-    justify-content: space-evenly;
-    background-color: transparent;
-    flex-direction: row;
+.project-tools {
+  display: flex;
+  justify-items: center;
+  justify-content: space-evenly;
+  background-color: transparent;
+  flex-direction: row;
 }
 
-.project-text{
-    /*
+.project-text {
+  /*
     width: 364px;
     height: 160px;*/
-    display: block;
+  display: block;
 
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 15px;
-    display: flex;
-    align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
 
-    color: black;
+  color: black;
 
-    background-color: transparent;
+  background-color: transparent;
 
-    text-align:justify;
-    margin: 5px 0px;
+  text-align: justify;
+  margin: 5px 0px;
 }
 
-
-.project-tool{
-    list-style: none;
-    color: var(--sec-bg-color);
-    background-color: transparent;
-    margin: 1vw;
+.project-tool {
+  list-style: none;
+  color: var(--sec-bg-color);
+  background-color: transparent;
+  margin: 1vw;
 }
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 850px) {
+  .project-thumbnail-left {
+    transform: scale(0.8);
+    margin-right: -6vw;
+    z-index: 0;
+  }
 
-    .project-thumbnail-left{
-        transform: scale(0.8);
-        margin-right: -6vw;
-        z-index: 0;
-    }
+  .project-presentation-left {
+    z-index: 2;
+  }
 
-    .project-presentation-left{
-        z-index: 2;
-    }
+  .project-thumbnail-right {
+    transform: scale(0.8);
+    margin-left: -6vw;
+    z-index: 0;
+  }
 
-    .project-thumbnail-right{
-        transform: scale(0.8);
-        margin-left: -6vw;
-        z-index: 0;
-    }
+  .project-presentation-right {
+    z-index: 2;
+  }
 
-    .project-presentation-right{
-        z-index: 2;
-    }
-
-/*
+  /*
     .project-presentation-left{
         width: 40vw;
         min-width: 230px;
@@ -204,71 +207,77 @@
     */
 }
 
-@media screen and (max-width: 725px){
-    #portfoliov1 .project-presentation-left{
-        background-image: url(../images/capture-portfoliov1-mid.png);
-        background-blend-mode: overlay;
-        background-size: cover;
-        color: var(--whitish);
-    }
+@media screen and (max-width: 725px) {
+  #portfoliov1 .project-presentation-left {
+    background-image: url(../images/capture-portfoliov1-mid.png);
+    background-blend-mode: overlay;
+    background-size: cover;
+    color: var(--whitish);
+  }
 
-    #vidly .project-presentation-left{
-        background-image: url(../images/vidly.PNG);
-        background-blend-mode: overlay;
-        background-size: cover;
-        color: var(--whitish);
-    }
+  #vidly .project-presentation-left {
+    background-image: url(../images/vidly.PNG);
+    background-blend-mode: overlay;
+    background-size: cover;
+    color: var(--whitish);
+  }
 
-    .project-thumbnail-left{
-        display: none;
-    }
+  .project-thumbnail-left {
+    display: none;
+  }
 
-    #playlits .project-presentation-right{
-        background-image: url(../images/playlits2.PNG);
-        background-blend-mode: overlay;
-        background-size: cover;
-        color: var(--whitish);
-    }
+  #playlitsV2 .project-presentation-left {
+    background-image: url(../images/playlitsv2.PNG);
+    background-blend-mode: overlay;
+    background-size: cover;
+    color: var(--whitish);
+  }
 
-    #asteroids .project-presentation-right{
-        background-image: url(../images/asteroids.png);
-        background-blend-mode: overlay;
-        background-size: cover;
-        color: var(--whitish);
-    }
+  #playlits .project-presentation-right {
+    background-image: url(../images/playlits2.PNG);
+    background-blend-mode: overlay;
+    background-size: cover;
+    color: var(--whitish);
+  }
 
-    .project-thumbnail-right{
-        display: none;
-    }
+  #asteroids .project-presentation-right {
+    background-image: url(../images/asteroids.png);
+    background-blend-mode: overlay;
+    background-size: cover;
+    color: var(--whitish);
+  }
+
+  .project-thumbnail-right {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 550px) {
+  .projects {
+    width: 100%;
+    height: auto;
+  }
 
-    .projects{
-        width: 100%;
-        height: auto;
-    }
+  .project-container {
+    height: auto;
+    margin: 40px 0px;
+    max-width: 100%;
+  }
 
-    .project-container{
-        height: auto;
-        margin: 40px 0px;
-        max-width: 100%;
-    }
+  .project-presentation-left,
+  .project-presentation-right,
+  .project-tools {
+    height: auto;
+    max-width: 80vw;
+  }
 
-    .project-presentation-left,
-    .project-presentation-right,
-    .project-tools{
-        height: auto;
-        max-width: 80vw;
-    }
+  .project-text {
+    margin: 15px 0px;
+  }
 
-    .project-text{
-        margin: 15px 0px;
-    }
-
-    .project-tools{
-        justify-content: stretch;
-        height: auto;
-        overflow: auto;
-    }
+  .project-tools {
+    justify-content: stretch;
+    height: auto;
+    overflow: auto;
+  }
 }
